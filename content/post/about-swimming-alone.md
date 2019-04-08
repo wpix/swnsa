@@ -2,11 +2,11 @@
 title = "What About Swimming Alone?"
 description = "Well, I am totally NOT against it. Actually, if I go swimming (which is very rare), I am usually by myself.  <br> Not that I will go to the gym at 6 am to ensure nobody is around or something, its more like nobody-in-the-swimming-pool-knows-who-I-am alone.<br> <br>_Why do I write this website title? <br> You see, people post fake things online._"
 tags = [
-    "about this cite",
-    "weird thoughts",
+"about this cite",
+"weird thoughts",
 ]
 date = "2019-04-06"
-featureimage = "https://s3.us-east-2.amazonaws.com/ying-ish/beach_surfing.jpeg"
+featureimage = "https://s3.us-east-2.amazonaws.com/ying-ish/beach\_surfing.jpeg"
 author = "ying"
 +++
 
@@ -19,7 +19,7 @@ And Bang! Here we are. I am writing my first blog post.
 Setting up a blog with Wordpress is not awfully amount of work, but it still costs me a robust 7-hr to get to the actual “blogging” part. (Now you can probably tell how much I don’t want to work on the draft, lol).
 <br/><br/>
 ### Seriously, where does it come from?
-![Two birds by the beach. San Diego](https://s3.us-east-2.amazonaws.com/ying-ish/beach-birds-2.jpeg)
+![Two birds by the beach. San Diego][image-1]
 <center>_"These two pretty little birds are not going to see the sunset alone"_</center>
 <br/><br/>
 ##### A Pizza Place
@@ -54,5 +54,8 @@ And then, I realized I should just stop paying too much attention to the grammar
 
 Don’t you think “You’ll Never Swim Alone” fits the Liverpool club better? After all, It’s liverPOOL.
 
-![In the end, there is only one bird](https://s3.us-east-2.amazonaws.com/ying-ish/beach-birds-1.jpeg)
+![In the end, there is only one bird][image-2]
 <center>_“Hopefully"_</center>
+
+[image-1]:	https://s3.us-east-2.amazonaws.com/ying-ish/beach-birds-2.jpeg
+[image-2]:	https://s3.us-east-2.amazonaws.com/ying-ish/beach-birds-1.jpeg
