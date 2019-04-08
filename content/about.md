@@ -1,7 +1,6 @@
 +++
 title = "about me"
 date = "2019-04-07"
-aliases = ["about-us","about-hugo","contact"]
 author = "ying"
 featureimage = "img/sample_feature_img.png"
 menu = "nav"

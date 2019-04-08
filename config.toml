@@ -23,11 +23,11 @@ paginate = 10
 	# or use Gravatar by adding your email address to generate a unique avatar
 	# gravatar = "your@email.com"
 
-	# headerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>Remove all header text in **config.toml** to disable this feature."
+	headerText = "It's another spring"
 	# To add a header background to the main site, save your image under static/img/yourimage.png
 	# and assign "yourimage.png" to the headerImage variable. If no image path is provided, a
 	# orange background will be shown instead.
-	headerImage = ""
+	headerImage = "yourimage.png"
 	copyright = "Released under the MIT license<br>Powered by [Hugo](https://gohugo.io/) with the [Type Theme](https://github.com/digitalcraftsman/hugo-type-theme)"
 
 	# Define which types of content shall be displayed on the homepage. By default Hugo uses
