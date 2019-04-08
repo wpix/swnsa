@@ -1,0 +1,27 @@
+{{ define "main" -}}
+	{{ if and (isset .Params "featureimage") (not (eq .Params.featureimage "")) -}}
+	<article class="feature-image">
+		<header style="background-image: url('{{ .Params.featureimage | absURL }}')">
+			<h1 class="title">{{ .Title }}</h1>
+		</header>
+	{{- else -}}
+	<article>
+		<header>
+			<h1 class="title">{{ .Title }}</h1>
+			{{ partial "post-meta" . }}
+		</header>
+	{{- end }}
+
+		<section class="post-content">
+			{{ .Content }}
+
+			{{ if (not (eq .Site.DisqusShortname "")) | and (not .Params.disableComments) }}
+				<hr>
+				{{ template "_internal/disqus.html" . }}
+			{{ end }}
+
+			<hr>
+			{{ partial "related" . }}
+		</section>
+	</article>
+{{- end }}
