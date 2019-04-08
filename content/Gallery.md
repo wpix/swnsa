@@ -8,5 +8,5 @@ description = " "
 <br/>
 ![A group of Kayaking people][image-2]
 
-[image-1]:	https://ying-ish.s3.amazonaws.com/chicago_2293_polarr.jpeg
-[image-2]:  https://ying-ish.s3.amazonaws.com/chicago_2307_polarr.jpeg
+[image-1]:	https://s3.us-east-2.amazonaws.com/ying-ish/chicago_2293_polarr.jpeg
+[image-2]:  https://s3.us-east-2.amazonaws.com/ying-ish/chicago_2307_polarr.jpeg
