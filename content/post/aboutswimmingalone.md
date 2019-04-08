@@ -6,7 +6,7 @@ tags = [
     "weird thoughts",
 ]
 date = "2019-04-06"
-featuredImage = "https://s3.us-east-2.amazonaws.com/ying-ish/beach_surfing.jpeg"
+featuredimage = "https://s3.us-east-2.amazonaws.com/ying-ish/beach_surfing.jpeg"
 author = "ying"
 +++
 
