@@ -2,7 +2,7 @@
 title = " "
 tags = []
 categories = []
-featuredIimage = ""
+featureimage = ""
 menu = ""
 description = " "
 +++
