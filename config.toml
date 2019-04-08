@@ -1,19 +1,19 @@
-baseurl = "https://www.example.com/"
+baseurl = ""
 languageCode = "en-us"
-title = "Type theme"
+title = "She will never swim alone"
 theme = "hugo-type-theme"
 # Enable comments by entering your Disqus shortname
-disqusShortname = "spf13"
+# disqusShortname = "spf13"
 # Add your tracking code to enable Google Analytics
-googleAnalytics = ""
+googleAnalytics = "UA-137829607-1"
 # Posts per page
 paginate = 10
 # Comment the themesDir option if you use this theme in production
-themesDir = "../.."
+# themesDir = "../.."
 
 
 [params]
-	author = "Your name"
+	author = "ying"
 	description = "Add a description of your website"
 	# The keywords will be added as a meta tag. Delimit them with a comma.
 	keywords = ""
@@ -21,9 +21,9 @@ themesDir = "../.."
 	# left by adding the filename in below
 	avatar = "img/avatar.png"
 	# or use Gravatar by adding your email address to generate a unique avatar
-	gravatar = "your@email.com"
+	# gravatar = "your@email.com"
 
-	headerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>Remove all header text in **config.toml** to disable this feature."
+	# headerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>Remove all header text in **config.toml** to disable this feature."
 	# To add a header background to the main site, save your image under static/img/yourimage.png
 	# and assign "yourimage.png" to the headerImage variable. If no image path is provided, a
 	# orange background will be shown instead.
@@ -37,14 +37,14 @@ themesDir = "../.."
 	[params.social]
 		# Insert your accout name and the icon will be shown in the right menu
 		rss = true
-		homepage = true
-		email = "hello@example.com"
+		homepage = false
+		email = ""
 		behance = ""
 		bitbucket  =""
 		dribbble = ""
 		facebook = ""
 		flickr = ""
-		github = "digitalcraftsman/hugo-type-theme"
+		github = "wpix/type"
 		googleplus = ""
 		instagram = ""
 		linkedin = ""
