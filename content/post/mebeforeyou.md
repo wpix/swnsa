@@ -3,7 +3,7 @@ title = "Me Before You"
 draft = false
 description = "for testing purpose"
 tags = ["books"]
-featuredimage = "https://s3.us-east-2.amazonaws.com/ying-ish/mebeforeyou.jpeg"
+featureimage = "https://s3.us-east-2.amazonaws.com/ying-ish/mebeforeyou.jpeg"
 date = "2019-04-07"
 +++
 

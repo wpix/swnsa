@@ -16,7 +16,7 @@ paginate = 10
 	author = "ying"
 	description = "Add a description of your website"
 	# The keywords will be added as a meta tag. Delimit them with a comma.
-	keywords = ""
+	keywords = "collection"
 	# Either show custom avatar on the top
 	# left by adding the filename in below
 	avatar = "img/avatar.png"
@@ -32,7 +32,7 @@ paginate = 10
 
 	# Define which types of content shall be displayed on the homepage. By default Hugo uses
 	# types with the most content files.
-	# mainSections = []
+	mainSections = ["post"]
 
 	[params.social]
 		# Insert your accout name and the icon will be shown in the right menu
