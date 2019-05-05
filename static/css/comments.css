@@ -48,7 +48,7 @@ div#comments.comments.v{
 
 .v .vwrap{
   border-width: 1px;
-  border-color: #c2c2c2;
+  border-color: #c2c2c2 t;
   height: 210px !important;
   border-radius: 6px !important;
   overflow: visible !important;
@@ -134,4 +134,5 @@ div.vedit{
 
 .v .vlist .vcard .vcontent {
   font-size: 16px !important;
+  line-height: 1.15
 }
