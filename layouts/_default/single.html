@@ -38,6 +38,11 @@
 {{ partial "single-pagination" . }}
 
 {{ if (.Params.comments) | or (and (or (not (isset .Params "comments")) (eq .Params.comments nil)) (and .Site.Params.comments (ne .Type "page"))) }}
+
+      {{ if .Site.Params.valine.enable }}
+      {{ partial "comments.html" . }}
+      {{ end }}
+      
 	{{ if .Site.Params.staticman }}
 	<div class="staticman-comments w-90 w-90-m w-60-l center">
 		{{ partial "post-comments.html" . }}

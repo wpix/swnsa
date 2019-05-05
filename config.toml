@@ -45,11 +45,23 @@ paginate = 20
 		#twitter = ""
 
 	[params.staticman] #[params.comments.staticman]
-		api = "https://dev.staticman.net/v3/entry/github/wpix/swnsa/master/data/comments"
+		api = "https://dev.staticman.net/v3/entry/github/wpix/swnsa/master/comments"
 		# pulls = "https://github.com/bsag/wow/pulls"
 		maxDepth = 2
 
 	[params.staticman.recaptcha]
       siteKey = "6Lfg0aEUAAAAALJk55EHef1QCvhDm6oTy4huxHbe"
       secret = "6Lfg0aEUAAAAAPqB9w_LzmN7zF8XDF-5tDu0zpMR"
+
+  [params.valine]
+    enable = true
+    appId = 'tbBm1LW7zwXq979I4cbUfrr1-gzGzoHsz'
+    appKey = 'JYAlTvkWuE1NN8S7VBSChzvp'
+    placeholder = 'Leave a Comment'
+    visitor = true
+
+
+
+
+
 

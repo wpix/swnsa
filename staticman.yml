@@ -1,10 +1,9 @@
 comments:
   name: "ying"
   allowedFields: ["author", "content", "website", "comment","parent_id", "permalink"]
-  allowedOrigins: ["localhost", "ying-ish.com"]
   branch            : "master"
   commitMessage     : "New comment in {options.slug} ({options.origin})"
-  path: "data/comments/{options.slug}"
+  path              : "data/comments/{options.slug}"
   filename          : "comment-{@timestamp}"
   format            : "yaml"
   moderation        : false
@@ -13,7 +12,7 @@ comments:
     email           : md5
   generatedFields:
     date:
-      type          : "date"
+      type          : date
       options:
         format      : "iso8601"
 
