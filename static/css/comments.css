@@ -47,7 +47,8 @@ div#comments.comments.v{
 }
 
 .v .vwrap{
-
+  border-width: 1px;
+  border-color: #c2c2c2;
   height: 210px !important;
   border-radius: 6px !important;
   overflow: visible !important;
@@ -121,11 +122,15 @@ div.vedit{
 
 .v .vlist .vcard .vh .vmeta .vat{
   color: #070707 !important;
-  border-bottom: 2px
-  border-color: #ffdee3;
     font-size: 14px !important;
     border-radius: 3px !important;
 }
+.v .vlist .vcard .vh .vmeta .vat:active,
+.v .vlist .vcard .vh .vmeta .vat:hover{
+  color: #d47b8a;
+}
+
+
 
 .v .vlist .vcard .vcontent {
   font-size: 16px !important;
