@@ -1,54 +1,34 @@
-
-
-
-
-
-
-div#comments.comments.v{
-  margin-top: 0px !important;
-  margin-left: 0px !important;
-  margin-right: 0px !important;
+.doc_comments {
+  font-size: 14px;
+  color: #f1aaaa;
+  margin-top: 30px;
+  padding: 35px 0 45px;
 }
 
-
-.v .vinput {
-  font-size: 13px !important;
-    height: 35px !important;
-}
-.v .power {
-  display: none !important;
+.doc_comments .comments_block_title {
+  color: #000000;
 }
 
-
-
-div.vcontrol{
-  padding-top: 0px !important;
+.v .vwrap {
+  border-radius: unset;
+  margin-top: 15px;
+    overflow: visible
 }
 
-
-.v .vwrap{
-  border-width: 2px;
-  border-color: #c2c2c2 t;
-  height: 250px !important;
-  border-radius: 6px !important;
-  overflow: visible !important;
-  counter-reset: avater;
+.v .veditor {
+  min-height: 4.75rem;
+  min-width: 4.75rem;
 }
 
-.v .vwrap .vedit .vemojis{
-  width: 400px !important;
-  background-color: #fff !important;
-  border-radius: 5px !important;
+.v .vwrap .vheader .vinput {
+  border: da;
 }
 
-.v .vwrap .vedit .vpreview {
-  width: 450px !important;
-  background-color: #fff !important;
-  border-radius: 5px !important;
+.v .vbtn {
+  color: #010101;
+  background-color: #f1aaaa;
+  border: none;
 }
-
-
-
 
 .v .vbtn:active,
 .v .vbtn:hover {
@@ -57,36 +37,8 @@ div.vcontrol{
   background-color: #ffdee3;
 }
 
-.v .vwrap .vedit .vctrl{
-  text-align: left !important;
-}
-
-.v .vwrap .vedit .vctrl span{
-  color: #000000 !important;
-}
-
-.v .vwrap .vedit .vctrl{
-  padding: 0px !important;
-  margin: 0px !important;
-}
-
-div.vedit{
-  height: 170px;
-}
-
-.v .veditor{
-  min-height: 130px !important;
-  font-size: 16px !important;
-  height: 150 !important;
-}
-
-
-
-.v .vlist .vcard {
-  border-width: 2px;
-  border-color: #c2c2c2 t;
-  
-  border-radius: 6px !important;
+.v .power {
+  display: none !important;
 }
 
 .v .vlist .vcard .vhead .vsys{
@@ -102,24 +54,12 @@ div.vedit{
 .v .vlist .vcard .vhead .vnick:hover{
   color: #d47b8a;
 }
-
-
 .v .vlist .vcard .vh .vmeta .vat{
-  color: #070707 !important;
+    color: #070707 !important;
     font-size: 14px !important;
     border-radius: 3px !important;
 }
 .v .vlist .vcard .vh .vmeta .vat:active,
 .v .vlist .vcard .vh .vmeta .vat:hover{
   color: #d47b8a;
-}
-
-
-
-.v .vlist .vcard .vcontent {
-  font-size: 16px !important;
-  color:#070707;
-  font-family:Arial, Helvetica, sans-serif;
-  line-height: 1;
-  margin-top: 0px;
 }
