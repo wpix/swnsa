@@ -22,10 +22,8 @@
         <div class="post-content f6 f5-ns measure-wide lh-copy"> {{ .Content }}</div>
 </div>
 
-	{{ if .Site.Params.staticman }}
-	<div class="staticman-comments tl">
-		{{ partial "post-comments.html" . }}
-	</div>
-	{{ end }} 
+      {{ if .Site.Params.valine.enable }}
+      {{ partial "comments.html" . }}
+      {{ end }}
 
 {{- end }}

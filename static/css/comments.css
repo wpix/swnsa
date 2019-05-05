@@ -1,6 +1,6 @@
 .doc_comments {
   font-size: 14px;
-  color: #383838;
+  color: #f1aaaa;
   margin-top: 30px;
   padding: 35px 0 45px;
 }
@@ -16,21 +16,22 @@
 
 .v .veditor {
   min-height: 4.75rem;
+  min-width: 4.75rem;
 }
 
 .v .vwrap .vheader .vinput {
-  border: none;
+  border: da;
 }
 
 .v .vbtn {
-  color: #FFFFFF;
-  background-color: #000000;
+  color: #010101;
+  background-color: #f1aaaa;
   border: none;
 }
 
 .v .vbtn:active,
 .v .vbtn:hover {
-  color: #FFFFFF;
+  color: #010101;
   border-color: #000000;
-  background-color: #303538;
+  background-color: #ffdee3;
 }

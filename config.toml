@@ -57,7 +57,7 @@ paginate = 20
     enable = true
     appId = 'tbBm1LW7zwXq979I4cbUfrr1-gzGzoHsz'
     appKey = 'JYAlTvkWuE1NN8S7VBSChzvp'
-    placeholder = 'Leave a Comment'
+    placeholder = 'Emoji and Markdown supported!'
     visitor = true
 
 

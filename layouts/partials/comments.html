@@ -1,8 +1,20 @@
+
+
 <!-- valine -->
+<section class="w-100 ph2 ph0-ns w-100-m w-80-l measure-wide mt5 center">
+
+<!--    <span id="<Your/Path/Name>" class="leancloud-visitors" data-flag-title="Your Article Title">
+    <em class="post-meta-item-text f5 gray">Article reading statistics  </em>
+    <i class="leancloud-visitors-count f5 gray">1000000</i>
+</span>
+-->
+
 <div class="doc_comments">
-  <div class="comments_block_title">Leave a Comment</div>
+  <div class="comments_block_title b">🎤 Leave a Comment</div>
   <div id="vcomments"></div>
 </div>
+<!-- id as the query condition -->
+
 
 <link rel="stylesheet" href="{{ "/css/comments.css" | absURL }}"/>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
@@ -15,5 +27,8 @@ new Valine({
   appKey: '{{ .Site.Params.valine.appKey }}',
   placeholder: '{{ .Site.Params.valine.placeholder }}',
   visitor: '{{ .Site.Params.valine.visitor }}',
+  lang: 'en',
+  visitor: true,
 })
 </script>
+</section>
