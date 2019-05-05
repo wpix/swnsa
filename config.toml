@@ -57,7 +57,7 @@ paginate = 20
     enable = true
     appId = 'tbBm1LW7zwXq979I4cbUfrr1-gzGzoHsz'
     appKey = 'JYAlTvkWuE1NN8S7VBSChzvp'
-    placeholder = '✍️ emoji supported '
+    placeholder = 'Say something ...'
     visitor = true
 
 

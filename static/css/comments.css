@@ -12,15 +12,30 @@ div#comments.comments.v{
 
 div.vheader.item2{
   border-bottom: 1px solid #f1aaaa;
-  height: 35px !important;
+  height: 25px !important;
 }
 
 .v .vwrap .vheader.item2 .vinput{
-  height: 30px !important;
+  height: 25px !important;
   border: 0px !important;
   width: 25% !important;
   margin: 0px !important;
 }
+
+
+.v .vinput {
+  font-size: 0.9rem !important;
+}
+.v .veditor {
+  font-size: 1rem !important;
+}
+.v .power {
+  display: none !important;
+}
+
+
+
+
 
 
 div.vcontrol{
@@ -51,6 +66,9 @@ div#comments.comments.v{
   border-radius: 5px !important;
 }
 
+
+
+
 .v .vbtn:active,
 .v .vbtn:hover {
   color: #010101;
@@ -64,8 +82,6 @@ div#comments.comments.v{
 
 .v .vwrap .vedit .vctrl span{
   color: #000000 !important;
-  border-radius: 3px !important;
-  padding: 3px !important;
 }
 
 .v .vwrap .vedit .vctrl{
@@ -104,9 +120,11 @@ div.vedit{
 
 .v .vlist .vcard .vh .vmeta .vat{
   color: #070707 !important;
-  border-radius: 3px !important;
-  padding-left: 10px !important;
-  padding-right: 10px !important;
+  background-color: #ffdee3
+    font-size: 1.2rem !important;
+    border-radius: 3px !important;
 }
 
-
+.v .vlist .vcard .vcontent {
+  font-size: 1.5rem !important;
+}
