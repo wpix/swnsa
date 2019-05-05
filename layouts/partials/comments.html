@@ -30,5 +30,15 @@ new Valine({
   lang: 'en',
   visitor: true,
 })
+
+    if(window.location.hash){
+          var checkExist = setInterval(function() {
+            if (document.getElementById(window.location.hash.replace("#",""))) {
+              location.href = window.location.hash;
+              clearInterval(checkExist);
+            }
+          }, 250);
+        }
+
 </script>
 </section>
