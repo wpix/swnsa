@@ -21,12 +21,14 @@
 }
 
 .v .vwrap .vheader .vinput {
-  border: da;
+  border-width: 2px;
+  border-color: #c2c2c2;
+  border-radius: 6px !important;
 }
 
 .v .vbtn {
   color: #010101;
-  background-color: #f1aaaa;
+  background-color: #ededed;
   border: none;
 }
 
@@ -34,7 +36,7 @@
 .v .vbtn:hover {
   color: #010101;
   border-color: #000000;
-  background-color:#ffdee3 ;
+  background-color:#ffdee3;
 }
 
 .v .power {
