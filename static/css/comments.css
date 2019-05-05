@@ -24,10 +24,10 @@ div.vheader.item2{
 
 
 .v .vinput {
-  font-size: 14px !important;
+  font-size: 13px !important;
 }
 .v .veditor {
-  font-size: 14px !important;
+  font-size: 13px !important;
 }
 .v .power {
   display: none !important;
@@ -49,7 +49,7 @@ div#comments.comments.v{
 .v .vwrap{
   border-width: 1px;
   border-color: #c2c2c2 t;
-  height: 210px !important;
+  height: 300px !important;
   border-radius: 6px !important;
   overflow: visible !important;
   counter-reset: avater;
@@ -101,8 +101,8 @@ div.vedit{
 
 
 .v .vlist .vcard {
-  border-left: 1px 
-  border-color: #ffdee3 !important;
+  border-left: 1px; 
+  border-left-color: #ffdee3 !important;
 }
 
 .v .vlist .vcard .vhead .vsys{
@@ -133,6 +133,7 @@ div.vedit{
 
 
 .v .vlist .vcard .vcontent {
-  font-size: 16px !important;
+  font-size: 14px !important;
+  font-family:Arial, Helvetica, sans-serif;
   line-height: 1;
 }
