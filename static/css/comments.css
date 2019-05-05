@@ -10,24 +10,10 @@ div#comments.comments.v{
   margin-right: 0px !important;
 }
 
-div.vheader.item2{
-  border-bottom: 1px solid #f1aaaa;
-  height: 25px !important;
-}
-
-.v .vwrap .vheader.item2 .vinput{
-  height: 25px !important;
-  border: 0px !important;
-  width: 25% !important;
-  margin: 0px !important;
-}
-
 
 .v .vinput {
   font-size: 13px !important;
-}
-.v .veditor {
-  font-size: 13px !important;
+    height: 35px !important;
 }
 .v .power {
   display: none !important;
@@ -35,21 +21,15 @@ div.vheader.item2{
 
 
 
-
-
-
 div.vcontrol{
   padding-top: 0px !important;
 }
 
-div#comments.comments.v{
-  border: 0px;
-}
 
 .v .vwrap{
-  border-width: 1px;
+  border-width: 2px;
   border-color: #c2c2c2 t;
-  height: 210px !important;
+  height: 250px !important;
   border-radius: 6px !important;
   overflow: visible !important;
   counter-reset: avater;
@@ -91,17 +71,19 @@ div#comments.comments.v{
 }
 
 div.vedit{
-  height: 120px;
+  height: 170px;
 }
 
 .v .veditor{
-  min-height: 70px !important;
-  height: 70px !important;
+  min-height: 130px !important;
+  font-size: 16px !important;
+  height: 150 !important;
 }
 
 
 
 .v .vlist .vcard {
+  border-left: solid;
   border-left-width: 2px; 
   border-left-color: #ffdee3 !important;
 }
@@ -113,9 +95,8 @@ div.vedit{
 
 .v .vlist .vcard .vhead .vnick{
   color: #070707;
-  font-size:14px;
+  font-size:16px;
 }
-
 .v .vlist .vcard .vhead .vnick:active,
 .v .vlist .vcard .vhead .vnick:hover{
   color: #d47b8a;
@@ -136,6 +117,7 @@ div.vedit{
 
 .v .vlist .vcard .vcontent {
   font-size: 16px !important;
+  color:#070707;
   font-family:Arial, Helvetica, sans-serif;
   line-height: 1;
   margin-top: 0px;
