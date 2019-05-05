@@ -1,30 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 <head>
-    <title>{{ .Title}}{{ if not .IsHome }} &middot; {{ .Site.Title }}{{ end }}</title>
     <meta charset="utf-8">
+    <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <title>{{ .Title}}{{ if not .IsHome }}&middot; {{ .Site.Title }}{{ end }}</title>
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
-    {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
     {{ .Hugo.Generator }}
-
-    {{ "<!-- CSS -->" | safeHTML }}
-    <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
-
-    {{ "<!--Favicon-->" | safeHTML }}
-    <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | absURL }}">
-    <link rel="shortcut icon" href="{{ "favicon.ico" | absURL }}" type="image/x-icon">
-
-    {{ if .RSSLink -}}
-    {{ "<!-- RSS -->" | safeHTML }}
-        <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-        <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end }}
+    <link rel="canonical" href="{{ .URL | absLangURL }}" />
+    {{- if .RSSLink }}
+    <link rel="alternate" href="{{ .RSSLink }}" type="application/rss+xml" title="{{ .Site.Title }}"> 
+    {{- else }}
+    <link rel="alternate" href="{{ .Site.RSSLink }}" type="application/rss+xml" title="{{ .Site.Title }}">
     {{- end }}
-
-    {{ "<!-- Font Awesome -->" | safeHTML }}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/solid.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/brands.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/fontawesome.min.css">
-
-    {{ "<!-- Google Fonts -->" | safeHTML }}
-    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    
+    {{- if .Site.Params.staticman.recaptcha -}}
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    
+    {{- end -}}
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}" type="image/x-icon">
+    {{ template "_internal/google_analytics_async.html" . }}
 </head>

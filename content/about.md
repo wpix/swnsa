@@ -1,21 +1,20 @@
 +++
-title = "about me"
+title = "about  "
 date = "2019-04-07"
 author = "ying"
 featureimage = "img/sample_feature_img.png"
 menu = "nav"
 +++
-
-Underconstruction...
-<br>
-Building a website is way harder than I'd thought of. 
-
-Working on:
-
-+ Building a tag page
-+ Adding a search function
-+ A photo gallery (maybe)
-
-You can find the source directory of this website in GitHub. 
+### About me
 
 
+
+
+
+
+#### About this site
+#### Why blogging in Engligh?
+
+
+#### Where does the site's name come from?
+[Click this link to my post](http://www.ying-ish.com/post/about-swimming-alone/)

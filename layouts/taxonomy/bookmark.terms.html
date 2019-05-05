@@ -1,0 +1,20 @@
+{{ define "main" -}}
+{{ $baseurl := .Site.BaseURL }}
+{{ partial "breadcrumb.html" . }} 
+  <article class="br2 pa0 mw6 measure">
+    <div class="w-100 ph3 ph0-l w-50-l measure mt4">
+
+            <ul class="list pl0">
+                {{ $data := .Data }} 
+                {{ range $key, $value := .Data.Terms.ByCount }}
+                <li class="dib mr2">
+                <a href="{{ $baseurl }}bookmarks/{{ $value.Name | urlize }}" 
+                    class="link near-black hover-teal">{{ $value.Name }}</a> ({{ $value.Count }})
+                </li>
+                <span class="mr2 moon-gray">/</span>
+                {{ end }}
+            </ul>
+    </div>
+</article>
+<!-- container for masonry -->
+{{ end -}}

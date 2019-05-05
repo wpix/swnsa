@@ -1,0 +1,24 @@
+comments:
+  name: "ying"
+  allowedFields: ["author", "content", "website", "comment","parent_id", "permalink"]
+  allowedOrigins: ["localhost", "ying-ish.com"]
+  branch            : "master"
+  commitMessage     : "New comment in {options.slug} ({options.origin})"
+  path: "data/comments/{options.slug}"
+  filename          : "comment-{@timestamp}"
+  format            : "yaml"
+  moderation        : false
+  requiredFields    : ['name', 'email', 'comment',"author", "content"]
+  transforms:
+    email           : md5
+  generatedFields:
+    date:
+      type          : "date"
+      options:
+        format      : "iso8601"
+
+    reCaptcha:
+      enabled: true
+      siteKey: 6LfjiJ0UAAAAANe57YZFPGUqt2USNAwMiGfbCz_s
+      secret: 6LfjiJ0UAAAAAEBYXV_H_-KcNcaiJXWvAm7Z3wVp
+

@@ -1,23 +1,36 @@
-<header class="site-header">
-	<div class="branding">
-		<a href="{{ .Site.BaseURL }}">
-		{{ with .Site.Params.gravatar -}}
-			<img class="avatar" src="https://www.gravatar.com/avatar/{{ . | md5 }}?s=100&d=identicon" alt="avatar"/>
-		{{- else -}}
-			<img class="avatar" src="{{ .Site.Params.avatar | absURL }}" alt="avatar"/>
-		{{- end }}
-		</a>
-		<h1 class="site-title">
-			<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-		</h1>
-	</div>
-	<nav class="site-nav">
-		<ul>
-			{{ range .Site.Menus.nav -}}
-				<li><a href="{{ .URL }}"> {{ .Name }} </a></li>
-			{{- end }}
+<nav class="db dt-l mt1-l w-100 border-box">
+    <h1 class="f4 f3-m f2-l lh-title tc tl-l dtc-l mb0 site-title">
+        <a class="db dtc-l v-mid teal link grow w-100 w-40-l tc tl-l" href="{{ .Site.BaseURL }}" title="Home">
+        {{ .Site.Title }}
+        </a>
+    </h1>
+    <div class="desktopnav f7 f7-m f6-l lh-title db dtc-l v-mid w-100 w-60-l tc tr-l">
+        <a class="link gray br1 pv1 ph1 hover-bg-washed-red bg-animated br2 pv1 ph1 dib mr1 mr1-l" href="{{ .Site.BaseURL }}essay/" title="Essays"><i class="fas fa-paragraph"></i>  blogs</a>
 
-			{{ partial "icons.html" . }}
-		</ul>
-	</nav>
-</header>
+        <a class="link gray br1 pv1 ph1 hover-bg-washed-red bg-animated br2 pv1 ph1 dib mr1 mr1-l" href="{{ .Site.BaseURL }}bookmarks/" title="Tags"><i class="fas fa-tag"></i>  bookmarks</a>
+
+        <a class="link gray br1 pv1 ph1 hover-bg-washed-red bg-animated br2 pv1 ph1 dib mr1 mr1-l" href="{{ .Site.BaseURL }}archives/" title="Essays"><i class="fas fa-paperclip"></i>  archives</a>
+
+        <a class="link gray br1 pv1 ph1 hover-bg-washed-red bg-animated br2 pv1 ph1 dib mr1 mr1-l" href="{{ .Site.BaseURL }}albums/" title="Albums"><i class="fa fa-camera-retro" aria-hidden="true"></i>  albums</a>
+
+        <a class="link gray br1 pv1 ph1 hover-bg-washed-red bg-animated br2 pv1 ph1 dib mr1 mr1-l" href="{{ .Site.BaseURL }}tags/" title="Tags"><i class="fas fa-hashtag"></i>  photo tags</a>
+
+        <a class="link gray br1 pv1 ph1 hover-bg-washed-red bg-animated br2 pv1 ph1 dib mr1 mr1-l" href="{{ .Site.BaseURL }}about/" title="About"><i class="fas fa-info"></i>  about</a>
+    </div>
+
+
+        <div class="mobilenav f7 f7-m f6-l lh-title db dtc-l v-mid w-100 w-70-l tc tr-l">
+        <a class="link gray br1 pv1 ph1 hover-bg-washed-red bg-animated br2 pv1 ph2 dib mr1 mr2-l" href="{{ .Site.BaseURL }}essay/" title="Essays"><i class="fas fa-paragraph"></i></a>
+
+        <a class="link gray br1 pv1 ph1 hover-bg-washed-red bg-animated br2 pv1 ph2 dib mr1 mr2-l" href="{{ .Site.BaseURL }}bookmarks/" title="Tags"><i class="fas fa-tag"></i></a>
+
+        <a class="link gray br1 pv1 ph1 hover-bg-washed-red bg-animated br2 pv1 ph2 dib mr1 mr2-l" href="{{ .Site.BaseURL }}archives/" title="Essays"><i class="fas fa-paperclip"></i></a>
+
+        <a class="link gray br1 pv1 ph1 hover-bg-washed-red bg-animated br2 pv1 ph2 dib mr1 mr2-l" href="{{ .Site.BaseURL }}albums/" title="Albums"><i class="fa fa-camera-retro" aria-hidden="true"></i></a>
+
+        <a class="link gray br1 pv1 ph1 hover-bg-washed-red bg-animated br2 pv1 ph2 dib mr1 mr2-l" href="{{ .Site.BaseURL }}tags/" title="Tags"><i class="fas fa-hashtag"></i></a>
+
+        <a class="link gray br1 pv1 ph1 hover-bg-washed-red bg-animated br2 pv1 ph2 dib mr1 mr2-l" href="{{ .Site.BaseURL }}about/" title="About"><i class="fas fa-info"></i></a>
+        <!-- content and some markups for mobile -->
+        </div>
+</nav>

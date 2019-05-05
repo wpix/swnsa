@@ -1,27 +1,48 @@
 {{ define "main" -}}
-	{{ if and (isset .Params "featureimage") (not (eq .Params.featureimage "")) -}}
-	<article class="feature-image">
-		<header style="background-image: url('{{ .Params.featureimage | absURL }}')">
-			<h1 class="title">{{ .Title }}</h1>
-		</header>
-	{{- else -}}
-	<article>
-		<header>
-			<h1 class="title">{{ .Title }}</h1>
-			{{ partial "post-meta" . }}
-		</header>
-	{{- end }}
 
-		<section class="post-content">
-			{{ .Content }}
+{{ $baseurl := .Site.BaseURL }}
+{{ $img := .Site.Params.imgurl }}
+<div class="mw-100 mw-90-l">
+	<figure class="mw-100 mw-80-l flex flex-column">
+		<img class="center contain" src=" https://apfbvvpren.cloudimg.io/width/1024/n/{{ $img }}{{ .Params.imgurl | safeURL }}"
+									srcset="https://apfbvvpren.cloudimg.io/width/1024/n/{{ $img }}{{ .Params.imgurl | safeURL }} 1024w,
+													https://apfbvvpren.cloudimg.io/width/2048/n/{{ $img }}{{ .Params.imgurl | safeURL }} 2048w,
+													https://apfbvvpren.cloudimg.io/width/3072/n/{{ $img }}{{ .Params.imgurl | safeURL }} 3072w"
+									class="" style="max-height: 78vh;">
 
-			{{ if (not (eq .Site.DisqusShortname "")) | and (not .Params.disableComments) }}
-				<hr>
-				{{ template "_internal/disqus.html" . }}
-			{{ end }}
+		<figcaption class="flex flex-column flex-row-l justify-center mt1">
+			<section class="tc dib tr-l f6 f5-l mb2 mr3-l">
+				<span class="title">{{ .Title }}</span>
+			</section>
 
-			<hr>
-			{{ partial "related" . }}
-		</section>
-	</article>
+				<section class="tc dib tl-l mb2">
+				<span class="f6">
+					{{ if isset .Params "tags" -}}
+						{{ $tagsLen := len .Params.tags }}
+							{{ if gt $tagsLen 0 -}}
+								{{ range $k, $v := (sort .Params.tags) -}}
+									<a href="{{ $.Site.BaseURL }}tags/{{ . | urlize | lower }}"
+										class="link near-black hover-bg-washed-red br-pill ph1 ph2-l mr1 mr2-l v-btm"># {{ . }}</a>
+							{{- end }}
+						{{- end }}
+					{{- end }}
+				</span>
+				</section>
+
+		</figcaption>
+	</figure>
+</div>
+
+
+
+{{ partial "single-pagination" . }}
+
+{{ if (.Params.comments) | or (and (or (not (isset .Params "comments")) (eq .Params.comments nil)) (and .Site.Params.comments (ne .Type "page"))) }}
+	{{ if .Site.Params.staticman }}
+	<div class="staticman-comments w-90 w-90-m w-60-l center">
+		{{ partial "post-comments.html" . }}
+	</div>
+	{{ end }}
+{{ end }}
+
 {{- end }}

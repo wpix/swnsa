@@ -1,63 +1,58 @@
-baseurl = ""
+baseurl = "https://www.ying-ish.com/"
 languageCode = "en-us"
-title = "She will never swim alone"
-theme = "hugo-type-theme"
+title = "she will never swims alone"
+copyright = "This work is licensed under a Creative Commons Attribution-Non-Commercial ShareAlike 4.0 International License."
+
 # Enable comments by entering your Disqus shortname
 # disqusShortname = "spf13"
 # Add your tracking code to enable Google Analytics
 googleAnalytics = "UA-137829607-1"
-# Posts per page
-paginate = 10
-# Comment the themesDir option if you use this theme in production
-# themesDir = "../.."
 
+
+# Posts per page
+paginate = 20
+
+[taxonomies]
+	tag = "tags"
+	album = "albums"
+	bookmark = "bookmarks"
 
 [params]
 	author = "ying"
-	description = "Add a description of your website"
+	description = ""
+	opengraph = true
+	
+	imgurl = "https://s3.us-east-2.amazonaws.com/ying-ish/"
+	
+	comments = true
 	# The keywords will be added as a meta tag. Delimit them with a comma.
-	keywords = "collection"
+	keywords = ""
 	# Either show custom avatar on the top
 	# left by adding the filename in below
-	avatar = "img/avatar.png"
+	gravatar = "img/avatar.png"
 	# or use Gravatar by adding your email address to generate a unique avatar
-	# gravatar = "your@email.com"
+	#gravatar = "your@email.com"
 
-	headerText = "It's another spring"
-	# To add a header background to the main site, save your image under static/img/yourimage.png
-	# and assign "yourimage.png" to the headerImage variable. If no image path is provided, a
-	# orange background will be shown instead.
-	headerImage = "yourimage.png"
-	copyright = "Released under the MIT license<br>Powered by [Hugo](https://gohugo.io/) with the [Type Theme](https://github.com/digitalcraftsman/hugo-type-theme)"
+	copyright = '<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA Licence</a>'
 
-	# Define which types of content shall be displayed on the homepage. By default Hugo uses
-	# types with the most content files.
-	mainSections = ["post"]
 
 	[params.social]
 		# Insert your accout name and the icon will be shown in the right menu
 		rss = true
-		homepage = false
-		email = ""
-		behance = ""
-		bitbucket  =""
-		dribbble = ""
-		facebook = ""
-		flickr = ""
-		github = "wpix/type"
-		googleplus = ""
-		instagram = ""
-		linkedin = ""
-		pinterest = ""
-		reddit = ""
-		soundcloud = ""
-		stackexchange = ""
-		steam = ""
-		tumblr = ""
-		twitter = ""
-		wordpress = ""
-		youtube = ""
-		gitlab = ""
-		trello = ""
-		meetup = ""
-		speackerdeck = ""
+		homepage = true
+		# email = "butshesagirl@rousette.org.uk"
+		# flickr = "bsag"
+		github = "https://github.com/wpix/"
+		instagram = "https://instagram.com/pi__pix/"
+		#pinterest = "bsag"
+		#twitter = "https://twitter.com/bsag/"
+
+	[params.staticman] #[params.comments.staticman]
+		api = "https://dev.staticman.net/v3/entry/github/wpix/swnsa.github.io/master/comments"
+		# pulls = "https://github.com/bsag/wow/pulls"
+		maxDepth = 2
+
+#	[params.staticman.recaptcha]
+#      siteKey = "6LfjiJ0UAAAAANe57YZFPGUqt2USNAwMiGfbCz_s"
+#      secret = "6LfjiJ0UAAAAAEBYXV_H_-KcNcaiJXWvAm7Z3wVp"
+

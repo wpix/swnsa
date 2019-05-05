@@ -1,0 +1,13 @@
+<ul class='item'>
+  <div class='f6 gray'>
+{{- $dateFormat := ( .Site.Params.settings.archiveDateFormat | default "Jan 02" ) -}}
+  <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
+    {{- .Date.Format $dateFormat -}}
+&nbsp;
+&nbsp;
+      <a style="text-decoration: none; border-bottom:1.4px dotted;" class="link f5 dark-gray hover-bg-light-gray br1 pv1 ph1" href='{{ .Permalink | relURL }}'>
+        {{- .Title -}}
+      </a> 
+  </time>
+  </div>
+</ul>

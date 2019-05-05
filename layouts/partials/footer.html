@@ -1,5 +1,25 @@
-<footer class="site-footer">
-	<p class="text">&copy; {{ now.Format "2006" }} - {{ .Site.Params.copyright | default "Released under the MIT license<br>Powered by [Hugo](https://gohugo.io/) with the [Type Theme](https://github.com/digitalcraftsman/hugo-type-theme)" | markdownify }}</p>
+<footer>
+    <div class="tc gray mv4 f4 f5-ns">
+        <a href="{{ .Site.Params.social.instagram | safeURL }}" class="mh1 gray link hover-teal" alt="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="{{ .Site.Params.social.github | safeURL }}" class="mh1 gray link hover-teal" alt="Github">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="{{ .Site.BaseURL}}index.xml" class="mh1 gray link hover-teal" alt="RSS feed for this site">
+            <i class="fas fa-rss"></i>
+        </a>
+        <span class="mh1 gray mv4 f6 f5-ns">&copy; ying {{ now.Format "2006" }} &middot;
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" class="link gray hover-teal small-caps">cc by-nc-sa</a>
+        </span>
+    </div>
 </footer>
 
-{{ partial "tracking.html" . }}
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+{{- if .Site.Params.staticman }}
+<script src="{{ "js/staticman.js" | absURL }}"></script>
+{{- end }}
+<script src="{{ "js/main.js" | absURL }}"></script>
+
+{{ partial "fathom.html" }}

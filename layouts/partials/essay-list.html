@@ -1,0 +1,41 @@
+{{ $baseurl := .Site.BaseURL }}
+
+<div class="w-90 ph2 ph0-ns w-70-m w-70-l mt1 center">
+
+
+    {{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "essay") 20 }}
+    {{ range $paginator.Pages -}}
+    <article class="mb4">
+        <h2 class="f5 f4-ns lh-title mb1">
+            <a href="{{ .Permalink }}" class="link near-black hover-teal mb1">
+                {{ .Title }}
+            </a>
+        </h2>
+
+        <footer class="f6 f5-ns moon-gray">Posted: {{ .Date.Format "02/01/2006" }}
+
+                <span class="f5">
+                    {{ if isset .Params "bookmarks" -}}
+                        {{ $tagsLen := len .Params.bookmarks }}
+                            {{ if gt $tagsLen 0 -}}
+                                {{ range $k, $v := (sort .Params.bookmarks) -}}
+                                    <a href="{{ $.Site.BaseURL }}bookmarks/{{ . | urlize | lower }}"
+                                        class="link moon-gray hover-gray br-pill ph1 ph2-l mr1 mr2-l"><i class="fas fa-tag"></i>  {{ . }}</a>
+                            {{- end }}
+                        {{- end }}
+                    {{- end }}
+                </span>
+        </footer>
+
+
+        <div class="post-content f6 f5-ns measure-wide lh-copy">{{ .Content | markdownify | truncate 800 }}
+        {{ if .Truncated }}
+            <a style="text-decoration: none; border-bottom:1.25px dotted;" class="link moon-gray hover-bg-light-gray" href="{{ .Permalink }}">read more 
+                <i class="far fa-hand-point-right"></i>
+            </a>
+            {{ end }} 
+        </div>
+
+    </article>
+    {{- end }}
+</div><!-- masonry -->
