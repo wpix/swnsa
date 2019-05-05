@@ -24,10 +24,10 @@ div.vheader.item2{
 
 
 .v .vinput {
-  font-size: 0.9rem !important;
+  font-size: 14px !important;
 }
 .v .veditor {
-  font-size: 1rem !important;
+  font-size: 14px !important;
 }
 .v .power {
   display: none !important;
@@ -100,7 +100,8 @@ div.vedit{
 
 
 .v .vlist .vcard {
-  border-left: 1px #ffdee3 !important;
+  border-left: 1px 
+  border-color: #ffdee3 !important;
 }
 
 .v .vlist .vcard .vhead .vsys{
@@ -120,11 +121,12 @@ div.vedit{
 
 .v .vlist .vcard .vh .vmeta .vat{
   color: #070707 !important;
-  background-color: #ffdee3;
-    font-size: 1.2rem !important;
+  border-bottom: 2px
+  border-color: #ffdee3;
+    font-size: 14px !important;
     border-radius: 3px !important;
 }
 
 .v .vlist .vcard .vcontent {
-  font-size: 1.2rem !important;
+  font-size: 16px !important;
 }
