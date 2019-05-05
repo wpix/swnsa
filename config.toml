@@ -29,7 +29,7 @@ paginate = 20
 	# left by adding the filename in below
 	gravatar = "img/avatar.png"
 	# or use Gravatar by adding your email address to generate a unique avatar
-	#gravatar = "your@email.com"
+	# gravatar = "your@email.com"
 
 	copyright = '<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA Licence</a>'
 
@@ -50,6 +50,6 @@ paginate = 20
 		maxDepth = 2
 
 	[params.staticman.recaptcha]
-      siteKey = "6LfjiJ0UAAAAANe57YZFPGUqt2USNAwMiGfbCz_s"
-      secret = "6LfjiJ0UAAAAAEBYXV_H_-KcNcaiJXWvAm7Z3wVp"
+      siteKey = "6Lfg0aEUAAAAALJk55EHef1QCvhDm6oTy4huxHbe"
+      secret = "6Lfg0aEUAAAAAPqB9w_LzmN7zF8XDF-5tDu0zpMR"
 
