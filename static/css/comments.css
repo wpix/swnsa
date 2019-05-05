@@ -113,6 +113,7 @@ div.vedit{
 
 .v .vlist .vcard .vhead .vnick{
   color: #070707;
+  font-size:14px;
 }
 
 .v .vlist .vcard .vhead .vnick:active,
@@ -134,7 +135,7 @@ div.vedit{
 
 
 .v .vlist .vcard .vcontent {
-  font-size: 14px !important;
+  font-size: 16px !important;
   font-family:Arial, Helvetica, sans-serif;
   line-height: 1;
   margin-top: 0px;
