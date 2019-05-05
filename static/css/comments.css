@@ -83,9 +83,10 @@ div.vedit{
 
 
 .v .vlist .vcard {
-  border-left: solid;
-  border-left-width: 2px; 
-  border-left-color: #ffdee3 !important;
+  border-width: 2px;
+  border-color: #c2c2c2 t;
+  
+  border-radius: 6px !important;
 }
 
 .v .vlist .vcard .vhead .vsys{
