@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
 
-    <title>{{ .Title}}{{ if not .IsHome }}&middot; {{ .Site.Title }}{{ end }}</title>
+    <title>{{ .Title}}{{ if not .IsHome }} &middot; {{ .Site.Title }}{{ end }}</title>
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
@@ -28,7 +28,9 @@
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://micro.blog/ying" rel="me" />
+
+    <script defer src="https://use.fontawesome.com/releases/v5.8.0/js/all.js"></script>
     <link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}" type="image/x-icon">
     {{ template "_internal/google_analytics_async.html" . }}
 </head>

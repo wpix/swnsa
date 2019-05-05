@@ -1,5 +1,5 @@
 ---
 title: "campus"
-description: "Be your own tree"
+description: "Four seasons"
 cover: "cover_4188.jpg"
 --- 

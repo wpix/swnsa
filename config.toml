@@ -6,8 +6,6 @@ copyright = "This work is licensed under a Creative Commons Attribution-Non-Comm
 # Enable comments by entering your Disqus shortname
 # disqusShortname = "spf13"
 # Add your tracking code to enable Google Analytics
-googleAnalytics = "UA-137829607-1"
-
 
 # Posts per page
 paginate = 20
@@ -19,7 +17,7 @@ paginate = 20
 
 [params]
 	author = "ying"
-	description = ""
+	description = "a collection of what's going on in her life"
 	opengraph = true
 	
 	imgurl = "https://s3.us-east-2.amazonaws.com/ying-ish/"
@@ -35,24 +33,23 @@ paginate = 20
 
 	copyright = '<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA Licence</a>'
 
-
 	[params.social]
 		# Insert your accout name and the icon will be shown in the right menu
 		rss = true
 		homepage = true
-		# email = "butshesagirl@rousette.org.uk"
-		# flickr = "bsag"
+		# email = ""
+		# flickr = ""
 		github = "https://github.com/wpix/"
 		instagram = "https://instagram.com/pi__pix/"
-		#pinterest = "bsag"
-		#twitter = "https://twitter.com/bsag/"
+		#pinterest = ""
+		#twitter = ""
 
 	[params.staticman] #[params.comments.staticman]
-		api = "https://dev.staticman.net/v3/entry/github/wpix/swnsa.github.io/master/comments"
+		api = "https://dev.staticman.net/v3/entry/github/wpix/swnsa/master/comments"
 		# pulls = "https://github.com/bsag/wow/pulls"
 		maxDepth = 2
 
-#	[params.staticman.recaptcha]
-#      siteKey = "6LfjiJ0UAAAAANe57YZFPGUqt2USNAwMiGfbCz_s"
-#      secret = "6LfjiJ0UAAAAAEBYXV_H_-KcNcaiJXWvAm7Z3wVp"
+	[params.staticman.recaptcha]
+      siteKey = "6LfjiJ0UAAAAANe57YZFPGUqt2USNAwMiGfbCz_s"
+      secret = "6LfjiJ0UAAAAAEBYXV_H_-KcNcaiJXWvAm7Z3wVp"
 

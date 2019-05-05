@@ -1,8 +1,8 @@
 {{ define "main" -}}
 {{ $baseurl := .Site.BaseURL }}
 {{ partial "breadcrumb.html" . }} 
-  <article class="br2 pa0 mw6 measure">
-    <div class="w-100 ph3 ph0-l w-50-l measure mt4">
+
+    <div class="w-100 ph3 ph0-l w-50-l center mt4">
 
             <ul class="list pl0">
                 {{ $data := .Data }} 
@@ -15,6 +15,6 @@
                 {{ end }}
             </ul>
     </div>
-</article>
+
 <!-- container for masonry -->
 {{ end -}}

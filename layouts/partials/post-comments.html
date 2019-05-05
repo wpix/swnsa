@@ -48,7 +48,7 @@
   {{ end }}
 
   <div class="mv5">
-  <h3>Make a Comment</h3>
+  <h3>Leave a Comment</h3>
 
   <form class="js-form w-100" method="post" action="{{ .Site.Params.staticman.api }}">
     <input type="hidden" name="options[slug]" value="{{ replace .URL "/" "" }}">
@@ -61,12 +61,15 @@
 
         <textarea class="input-reset ba b--moon-gray lh-copy w-100 mb3 pa2" 
                   name="fields[comment]" rows="5" type="text" 
-                  placeholder="Comment. Markdown syntax, KaTeX inline math, and even images all work"></textarea>
+                  placeholder="Comment. Markdown is supported!"></textarea>
         <input class="input-reset ba b--moon-gray lh-copy w-100 mb3 pa2" 
                 name="fields[name]" type="text" placeholder="Name"/>
         <input class="input-reset ba b--moon-gray lh-copy w-100 mb3 pa2" 
                 type="email" name="fields[email]" 
-                placeholder="Email address (will not be shown publicly)"/>
+                placeholder="Email address (will not be stored or shown)"/>
+        <input class="input-reset ba b--moon-gray lh-copy w-100 mb3 pa2" 
+                type="website" name="fields[website]" 
+                placeholder="Your website (optional)"/>
 
     {{ if .Site.Params.staticman.recaptcha }}
       <div class="g-recaptcha mv2" data-sitekey="{{ .Site.Params.staticman.recaptcha.sitekey }}"></div>

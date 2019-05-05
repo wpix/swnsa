@@ -1,5 +1,5 @@
 ---
 title: "sea"
-description: "Be your own tree"
+description: "Fade sings: under the sea"
 cover: "cover_3737.jpg"
 --- 

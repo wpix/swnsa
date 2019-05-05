@@ -2,8 +2,6 @@
 title = "about  "
 date = "2019-04-07"
 author = "ying"
-featureimage = "img/sample_feature_img.png"
-menu = "nav"
 +++
 ### About me
 
