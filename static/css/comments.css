@@ -10,8 +10,10 @@
 }
 
 .v .vwrap {
-  border-radius: unset;
   margin-top: 15px;
+  border-width: 2px;
+  border-color: #c2c2c2;
+  border-radius: 6px !important;
     overflow: visible
 }
 
@@ -21,9 +23,6 @@
 }
 
 .v .vwrap .vheader .vinput {
-  border-width: 2px;
-  border-color: #c2c2c2;
-  border-radius: 6px !important;
 }
 
 .v .vbtn {
