@@ -51,9 +51,11 @@ div#comments.comments.v{
   border-radius: 5px !important;
 }
 
-.v .vbtn{
-  background-color: #f1aaaa !important;
-  color: #fff !important;
+.v .vbtn:active,
+.v .vbtn:hover {
+  color: #010101;
+  border-color: #000000;
+  background-color: #ffdee3;
 }
 
 .v .vwrap .vedit .vctrl{
@@ -94,9 +96,14 @@ div.vedit{
   color: #070707;
 }
 
+.v .vlist .vcard .vhead .vnick:active,
+.v .vlist .vcard .vhead .vnick:hover{
+  color: #d47b8a;
+}
+
 
 .v .vlist .vcard .vh .vmeta .vat{
-  color: #fff !important;
+  color: #070707 !important;
   border-radius: 3px !important;
   padding-left: 10px !important;
   padding-right: 10px !important;
