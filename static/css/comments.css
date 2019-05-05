@@ -91,104 +91,10 @@ div.vedit{
 }
 
 .v .vlist .vcard .vh .vmeta .vat{
-
   color: #fff !important;
   border-radius: 3px !important;
   padding-left: 10px !important;
   padding-right: 10px !important;
 }
 
-.v .vlist .vcard .vhead:before{
 
-    display: block;
-    float: left;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    margin: 0 12px 0 0;
-    color: #fff;
-    font-size: 15px;
-    font-weight: bold;
-    font-style: normal;
-    background-color: #f1aaaa;
-    border-radius: 50%;
-    text-align: center;
-    counter-increment: avater;
-}
-
-.v .vlist .vcard .vquote{
-  margin-left: 80px; 
-}
-
-.v .vlist .vcard .vquote{
-  counter-reset: avaters;
-}
-
-.v .vlist .vcard .vquote  .vhead:before{
-    display: block;
-    float: left;
-    width: 38px;
-    height: 38px;
-    line-height: 38px;
-    margin: 0 12px 0 0;
-    color: #fff;
-    font-size: 15px;
-    font-weight: bold;
-    font-style: normal;
-    background-color: #fff;
-    border: 3px solid #f1aaaa;
-    color: #f1aaaa;
-    border-radius: 50%;
-    text-align: center;
-    
-    content: counter(avaters);
-    counter-increment: avaters;
-}
-
-.v .vlist .vcard  p{
-  margin-bottom: 0px !important;
-  color: #666;
-  text-align: left;
-  letter-spacing: 3px; 
-  line-height: 25.59375px;
-}
-.v .vlist .vcard .vquote a.at{
-  float: left;
-  margin-right: 13px; 
-  color: #567843;
-  text-decoration: none;
-}
-
-.v .vlist .vcard .vquote .vcontent{
-  font-size: 15px;
-  font-weight: 200;
-}
-
-.v .vlist .vcard .vcontent{
-  margin-top: 58px !important;
-  font-size: 15px !important;
-  font-weight: 500 !important;
-  padding-top: 0px !important;
-}
-
-.v .vlist .vcard .vhead .vnick{
-  font-size: 17px !important;
-  font-weight: 600 !important;
-}
-
-.v .vlist .vcard{
-  padding-top: 8px !important;
-}
-
-.v .vlist .vcard .vhead{
-  float: left !important;
-}
-
-.v .vlist .vcard .vh .vmeta{
-  float: right !important;
-}
-
-.v .vlist .vcard .vcontent.expand:after{
-  content: "click to see all" !important;
-  font-weight: 400 !important;
-}
