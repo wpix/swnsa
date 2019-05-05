@@ -120,11 +120,11 @@ div.vedit{
 
 .v .vlist .vcard .vh .vmeta .vat{
   color: #070707 !important;
-  background-color: #ffdee3
+  background-color: #ffdee3;
     font-size: 1.2rem !important;
     border-radius: 3px !important;
 }
 
 .v .vlist .vcard .vcontent {
-  font-size: 1.5rem !important;
+  font-size: 1.2rem !important;
 }
