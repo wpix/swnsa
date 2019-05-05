@@ -49,20 +49,20 @@ div#comments.comments.v{
 .v .vwrap{
   border-width: 1px;
   border-color: #c2c2c2 t;
-  height: 300px !important;
+  height: 210px !important;
   border-radius: 6px !important;
   overflow: visible !important;
   counter-reset: avater;
 }
 
 .v .vwrap .vedit .vemojis{
-  width: 600px !important;
+  width: 400px !important;
   background-color: #fff !important;
   border-radius: 5px !important;
 }
 
 .v .vwrap .vedit .vpreview {
-  width: 600px !important;
+  width: 450px !important;
   background-color: #fff !important;
   border-radius: 5px !important;
 }
@@ -100,8 +100,9 @@ div.vedit{
 }
 
 
+
 .v .vlist .vcard {
-  border-left: 1px; 
+  border-left-width: 2px; 
   border-left-color: #ffdee3 !important;
 }
 
@@ -136,4 +137,5 @@ div.vedit{
   font-size: 14px !important;
   font-family:Arial, Helvetica, sans-serif;
   line-height: 1;
+  margin-top: 0px;
 }
