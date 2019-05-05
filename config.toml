@@ -45,7 +45,7 @@ paginate = 20
 		#twitter = ""
 
 	[params.staticman] #[params.comments.staticman]
-		api = "https://dev.staticman.net/v3/entry/github/wpix/swnsa/master/comments"
+		api = "https://dev.staticman.net/v3/entry/github/wpix/swnsa/master/data/comments"
 		# pulls = "https://github.com/bsag/wow/pulls"
 		maxDepth = 2
 
