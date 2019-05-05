@@ -82,13 +82,18 @@ div.vedit{
 
 
 .v .vlist .vcard {
-  border: 1px dashed #ffdee3 !important;
+  border-left: 1px #ffdee3 !important;
 }
 
 .v .vlist .vcard .vhead .vsys{
   display: none !important;
   background-color: #fff !important;
 }
+
+.v .vlist .vcard .vhead .vnick{
+  color: #070707;
+}
+
 
 .v .vlist .vcard .vh .vmeta .vat{
   color: #fff !important;
