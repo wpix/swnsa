@@ -34,7 +34,7 @@
 .v .vbtn:hover {
   color: #010101;
   border-color: #000000;
-  background-color: #ffdee3;
+  background-color: #f1aaaa;
 }
 
 .v .power {
@@ -56,8 +56,8 @@
 }
 .v .vlist .vcard .vh .vmeta .vat{
     color: #070707 !important;
-    background-color: #c2c2c2;
-    font-size: 14px !important;
+    background-color: #ffe6e6;
+    font-size: 13px !important;
     border-radius: 3px !important;
 }
 .v .vlist .vcard .vh .vmeta .vat:active,
