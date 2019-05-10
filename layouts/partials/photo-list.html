@@ -5,7 +5,7 @@
 	<div>
 		<div class="flex flex-wrap items-start justify-center">
 
-	{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "photo") 13 }}
+	{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "photo") 20 }}
 	{{ range $paginator.Pages -}}
 				<a href="{{ .Permalink }}" class="h9 h9-m h5-l mw-100 mw6-l mr2-ns mb2 contain" data-tooltip="{{ .Title }}">
 		<img class="center contain" src=" https://apfbvvpren.cloudimg.io/height/256/n/{{ $img }}{{ .Params.imgurl | safeURL }}"
