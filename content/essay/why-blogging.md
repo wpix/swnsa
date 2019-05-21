@@ -17,16 +17,16 @@ I can’t tell exactly how much stress I experience currently. On a scale one to
 So I guess I need to speak out. The thing is, I never feel “okay” to feel stressed out. It’s not like I am any different than my friends or colleagues. By saying I am not doing well makes me feel like I am underestimating others’ stresses. Blogging will be so much better as I don’t write to (or talk to) any specific people. I feel okay to say that I am not okay in a place that few people will ever care.
 <br/>
 
-**What do I write for?  **
+**What do I write for?**
 
-This idea reminds me of a plot in the [Fan Girl](https://www.amazon.com/Fangirl-Novel-Rainbow-Rowell/dp/1250030951/ref=sr_1_1?keywords=fan+girl&qid=1557039621&s=gateway&sr=8-1). A professor of a writing course asks students a question—“why do we write?”—and got lots of funny responses. I will list some of them: 
+This idea reminds me of a plot in the [Fan Girl](https://www.amazon.com/Fangirl-Novel-Rainbow-Rowell/dp/1250030951/). A professor of a writing course asks students a question—“why do we write?”—and got lots of funny responses. I will list some of them: 
 
   > to express ourselves; because we like the sound of our own voices; to clear the voices in my head; to explore new worlds; to explore old ones; to set ourselves free; to show people what it’s like inside our heads (assuming they want to know); to make people laugh…  
 
 I read the book two years ago, and I liked almost every single answer. In a way that I forget what the book mainly talks about but still remember this scene. A very special scene. I mean, just to think of something that is capable of setting yourself free. Previously I only find those answers interesting. Now I understand some of them a little better, such as to turn off the voices in my mind.
 <br/>
 
-**Writing as talking  **
+**Writing as talking**
 
 Given all the contexts, this website is meant to be a personal space. I’ve decided not to add any professional information to this website. I may share some solutions or notes to some problems that I ran into every now and then. But they are gonna be subtle. Everything posted here will more sound like me talking to myself. It’s not like I have targeted audience or something; I want to keep it simple, and funny if possible. I write to you as I talk to a friend, a friend who I may not be familiar with, who I may never have the chance to meet in person.  
 <br/>

@@ -4,4 +4,4 @@ imgurl: "trees_3774.jpg"
 albums: ['trees']
 date: "2019-04-03"
 ---
-![Palm trees, Santa Barbara, Carlifornia](https://s3.us-east-2.amazonaws.com/ying-ish/trees_3774.jpg)
+![Palm trees, Santa Barbara, Carlifornia](https://apfbvvpren.cloudimg.io/width/cdn/n/n/https://raw.githubusercontent.com/wpix/solid-pipix/master/photos/trees_3774.jpg)

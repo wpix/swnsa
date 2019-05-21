@@ -20,7 +20,7 @@ paginate = 20
 	description = "a collection of what's going on in her life"
 	opengraph = true
 	
-	imgurl = "https://s3.us-east-2.amazonaws.com/ying-ish/"
+	imgurl = "https://raw.githubusercontent.com/wpix/solid-pipix/master/photos/"
 	
 	comments = true
 	# The keywords will be added as a meta tag. Delimit them with a comma.

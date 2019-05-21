@@ -47,12 +47,13 @@ _I wish you were here, and I am glad that you are not._
 
 And then, I realized I should just stop paying too much attention to the grammar.
 <br/>
-* All in all
+
+**All in all**
 
 Don’t you think “You’ll Never Swim Alone” fits the Liverpool club better? After all, It’s liverPOOL.
 
 ![In the end, there is only one bird][image-2]
 <center>_“Hopefully"_</center>
 
-[image-1]:	https://s3.us-east-2.amazonaws.com/ying-ish/beach-birds-2.jpeg
-[image-2]:	https://s3.us-east-2.amazonaws.com/ying-ish/beach-birds-1.jpeg
+[image-1]:	https://raw.githubusercontent.com/wpix/solid-pipix/master/photos/beach-birds-2.jpeg
+[image-2]:	https://raw.githubusercontent.com/wpix/solid-pipix/master/photos/beach-birds-1.jpeg

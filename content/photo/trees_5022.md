@@ -5,4 +5,4 @@ imgurl: "trees_5022.jpg"
 albums: ['trees']
 date: "2019-04-04"
 ---
-![aaand, the zoom-in of those lovely red trees](https://s3.us-east-2.amazonaws.com/ying-ish/trees_5022.jpg)
+![aaand, the zoom-in of those lovely red trees](https://apfbvvpren.cloudimg.io/width/cdn/n/n/https://raw.githubusercontent.com/wpix/solid-pipix/master/photos/trees_5022.jpg)

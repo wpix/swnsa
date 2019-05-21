@@ -5,4 +5,4 @@ albums: ['sea']
 date: "2019-04-08"
 tags: ['landscape']
 ---
-![Biddeford, rocks](https://s3.us-east-2.amazonaws.com/ying-ish/biddeford_9859.jpg)
+![Biddeford, rocks](https://apfbvvpren.cloudimg.io/width/cdn/n/n/https://raw.githubusercontent.com/wpix/solid-pipix/master/photos/biddeford_9859.jpg)
