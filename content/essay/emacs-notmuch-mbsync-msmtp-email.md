@@ -165,7 +165,7 @@ I recommend using the above command to send test emails as the well-documented `
 ## Finally, Emacs
 ### notmuch
 In your init.el file, add the following codes
-```bash 
+```html
 ;;notmuch setup
 (add-to-list 'exec-path "/usr/local/bin/")
 (setq notmuch-binary "/usr/local/bin/notmuch") 
@@ -184,7 +184,7 @@ cd ~/.emacs.d
 touch notmuch-config.el
 ```
 In this file, add the following settings:
-```bash
+```html
 (setq user-full-name "YOURNAME")
 (setq user-mail-adress "YOURACCOUNT")
 (setq mail-user-agent 'message-user-agent)
