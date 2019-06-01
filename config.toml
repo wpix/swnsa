@@ -19,7 +19,7 @@ paginate = 20
 	author = "ying"
 	description = "a collection of what's going on in her life"
 	opengraph = true
-	
+
 	imgurl = "https://raw.githubusercontent.com/wpix/solid-pipix/master/photos/"
 	
 	comments = true
@@ -30,7 +30,6 @@ paginate = 20
 	gravatar = "img/avatar.png"
 	# or use Gravatar by adding your email address to generate a unique avatar
 	# gravatar = "your@email.com"
-
 	copyright = '<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA Licence</a>'
 
 	[params.social]

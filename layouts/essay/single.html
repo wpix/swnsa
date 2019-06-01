@@ -1,10 +1,10 @@
 {{ define "main" -}}
 {{ $baseurl := .Site.BaseURL }}
 
-<div class="w-100 ph2 ph0-ns w-100-m measure-wide center">
+<div class="w-100 ph2 ph0-ns w-100-m w-50-l center">
 
-    <h3 class="f5 f4-ns lh-title">{{ .Title }}</h3>
-        <footer class="f6 f5-ns moon-gray">Posted: {{ .Date.Format "02/01/2006" }}
+    <h3 class="f3 f3-ns lh-title">{{ .Title }}</h3>
+        <footer class="f5 f5-ns moon-gray">Posted: {{ .Date.Format "02/01/2006" }}
 
                 <span class="f5">
                     {{ if isset .Params "bookmarks" -}}
@@ -12,14 +12,14 @@
                             {{ if gt $tagsLen 0 -}}
                                 {{ range $k, $v := (sort .Params.bookmarks) -}}
                                     <a href="{{ $.Site.BaseURL }}bookmarks/{{ . | urlize | lower }}"
-                                        class="link moon-gray hover-gray br-pill ph1 ph2-l mr1 mr2-l"><i class="fas fa-hashtag"></i>  {{ . }}</a>
+                                        class="link moon-gray hover-gray br-pill ph1 ph2-l mr1 mr2-l"><i class="fas fa-tag"></i>  {{ . }}</a>
                             {{- end }}
                         {{- end }}
                     {{- end }}
                 </span>
         </footer>
 
-        <div class="post-content f6 f5-ns measure-wide lh-copy"> {{ .Content }}</div>
+        <div class="post-content f5 f5-ns w-100-l lh-copy"> {{ .Content }}</div>
 </div>
 
       {{ if .Site.Params.valine.enable }}

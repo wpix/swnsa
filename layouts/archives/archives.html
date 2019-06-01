@@ -1,11 +1,11 @@
 {{ define "main" -}} 
 {{ partial "breadcrumb.html" . }} 
   <article class="br2 pa0 mw6 center">
-<div class="w-100 ph1 ph0-ns mt1 w-90-m w-90-lcenter">
+<div class="w-100 ph1 ph0-ns mt1 w-90-m w-100-l center">
 
   {{ with .Site.GetPage "section" "essay" }}
     {{ range .Data.Pages.GroupByDate "2006" }}
-            <h2 class="f6 f6-ns">
+            <h2 class="f5 f5-ns">
             {{ .Key }}
             </h2>    
             {{ range  .Pages }}
