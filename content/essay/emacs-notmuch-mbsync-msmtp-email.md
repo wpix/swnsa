@@ -79,13 +79,13 @@ brew install openssl
 ```bash
 unknown/misplaced keyword 'AuthMechs' 'SSLType'
 ``` 
-To solve this problem, please refer to the configuration section on the latest official website [mbsync](http://isync.sourceforge.net/mbsync.html#CONFIGURATION), and try:
+To solve this problem, please refer to the configuration section on the latest official website [mbsync](http://isync.sourceforge.net/mbsync.html#CONFIGURATION), and try to:
   
 + reorder variables so that they follow the order listed on the websites, say Host needs to go before the Port variable, or AuthMechs has to go before the SSLType;
 + pay attention to your line spacing. On the website, it says "Sections are started by a section keyword and are terminated by an empty line or end of file," which means only one empty line is allowed between each section. Make sure, for example, that you don't have two empty lines between the section "IMAPAccount" and the section "IMAPstore"
 + If still having troubles, I recommend downloading existing profiles shared by others from the Github and ONLY replacing your account information. Try not to change any formatting of the file.
   
-`Subfolders Verbatim`  is optional but necessary if your email account are with many subfolders. You can find all three options on the configuration page of [mbsync](http://isync.sourceforge.net/mbsync.html#CONFIGURATION).
+The variable `Subfolders Verbatim` is optional but necessary if your email account have many subfolders. Mbsync won't start fetching emails in the subfolders until you set the subfolder structure. You can find all three options on the configuration page of [mbsync](http://isync.sourceforge.net/mbsync.html#CONFIGURATION).
 
 ### run
 ```bash 
