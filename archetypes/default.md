@@ -1,6 +1,7 @@
 +++
-title = " "
-tags = []
-layout = " "
-fate = " "
+categories = [""]
+tags = [""]
+title = "{{ replace .TranslationBaseName "-" " " | title }}"
+date = "{{ .Date }}"
+
 +++
