@@ -59,7 +59,17 @@ paginate = 20
     placeholder = 'Say something ...'
     visitor = true
 
-
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "emacs"
+    tabWidth = 4
 
 
 
