@@ -8,7 +8,7 @@ type = "essay"
 ### TL;DR (Organizing Annotated Bibliography in Org-mod)
 I've had trouble establishing an effective work flow to organize annotated bibliography with Emacs. Previously I've been using [Org-brain](https://github.com/Kungsgeten/org-brain), a sophisticated wiki-style tool to visualize concepts and their relationships. Here is a screenshot of the structure I set up. 
 
-![Org-brain overview](https://apfbvvpren.cloudimg.io/width/cdn/n/n/https://raw.githubusercontent.com/wpix/solid-pipix/master/miniposts/org-brain-overview.png)
+![Org-brain overview](https://apfbvvpren.cloudimg.io/v7/raw.githubusercontent.com/wpix/solid-pipix/master/articles/org-brain-overview.png?width/cdn/n/n)
 
 Though one can interlink all concepts, it is hard to accurately locate a topic and related ones if one set up the hierarchy more than three levels, which is common in scientific research. I've tried logging multiple annotated bibliography under one parent headline or logging each bibliography as a standalone entry, but nothing quite work the way I imagined. I'd recommend Org-brain to users who mainly want to map relationships between concepts or ideas, with less focuses on details or descriptions of themselves. 
 
@@ -131,7 +131,7 @@ Open any webpage and hit the bookmarklet, a organized webpage in org-mode should
 
 Here is a screenshot capturing this blog entry.
 
-![org-capture-example](https://apfbvvpren.cloudimg.io/width/cdn/n/n/raw.githubusercontent.com/wpix/solid-pipix/master/miniposts/org-protocal-example.png)
+![org-capture-example](https://apfbvvpren.cloudimg.io/v7/raw.githubusercontent.com/wpix/solid-pipix/master/articles/org-capture-overview.png?width/cdn/n/n)
 
 Hopefully I will be capturing a ton literature considering the time I throw into configuring this feature.
 

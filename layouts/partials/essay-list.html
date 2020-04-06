@@ -12,7 +12,7 @@
             </a>
         </h2>
 
-        <footer class="f5 f4-5-ns moon-gray">Posted: {{ .Date.Format "02/01/2006" }}
+        <footer class="f5 f4-5-ns gray">Posted: {{ .Date.Format "Jan 2, 2006" }}
 
                 <span class="f5-ns">
                     {{ if isset .Params "bookmarks" -}}
@@ -20,7 +20,7 @@
                             {{ if gt $tagsLen 0 -}}
                                 {{ range $k, $v := (sort .Params.bookmarks) -}}
                                     <a href="{{ $.Site.BaseURL }}bookmarks/{{ . | urlize | lower }}"
-                                        class="link moon-gray hover-gray br-pill ph1 ph2-l mr1 mr2-l"><i class="fas fa-tag"></i>  {{ . }}</a>
+                                        class="link gray hover-moon-gray br-pill ph1 ph2-l mr1 mr2-l"><i class="fas fa-tag"></i>  {{ . }}</a>
                             {{- end }}
                         {{- end }}
                     {{- end }}
