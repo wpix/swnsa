@@ -59,12 +59,12 @@ MimeType=x-scheme-handler/org-protocol;
 ```
 
 If you haven't already installed the desktop utensils, run 
-```bash
+``` bash
 brew install desktop-file-utils
 ```
 Then update the application folder with 
 
-```bash
+``` bash
 update-desktop-database ~/.local/share/applications/
 ```
 If succeeded, a file named "mimeinfo.cache" will be created in this folder. 
@@ -76,13 +76,13 @@ You can continue following the [guide here](https://github.com/sprig/org-capture
 ### Emacs configuration 
 In your init file or equivalent, adding
 
-```
+``` emacs
 (server-start)
 (require 'org-protocol)
 ```
 and,
 
-```
+``` emacs
 (setq org-directory "~/org-notes")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 (define-key global-map "\C-cc" 'org-capture)
