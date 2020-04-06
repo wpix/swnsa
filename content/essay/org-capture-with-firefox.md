@@ -32,8 +32,8 @@ This blog will guide you through setting:
 
 With few guides available for setting this up for macOS, I record here the configurations that worked for me and hopefully it will be any help if you happen to find this blog. Below is my system information, FYI.
 <br/>
-|System Version               |  macOS 10.14.4 (18E226)|
-|Kernel Version               |  Darwin 18.5.0|
+| System Version | macOS 10.14.4 (18E226) |
+| Kernel Version | Darwin 18.5.0          |
 <br/>
 <br/>
 ### Installing Org-protocal on macOS
@@ -75,13 +75,13 @@ You can continue following the [guide here](https://github.com/sprig/org-capture
 ### Emacs configuration 
 In your init file or equivalent, adding
 
-``` emacs-lisp
+```
 (server-start)
 (require 'org-protocol)
 ```
 and,
 
-``` emacs-lisp
+```
 (setq org-directory "~/org-notes")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 (define-key global-map "\C-cc" 'org-capture)
@@ -106,7 +106,7 @@ In terminal, input
 ```bash 
 emacsclient -n "org-protocol:///capture?url=https://www.wikipedia.org/"
 ``` 
-and a Org-capture buffer should appear in the current or a new Emacs window. Replace any url you want to test after `url="`.
+and a Org-capture buffer should appear in the current or a new Emacs window. Replace any url you want to test after `url=`.
 
 If the capture buffer doesn't pop up or the capture template is wrong, make sure to check what goes wrong in earlier setting. 
 
