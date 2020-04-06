@@ -1,6 +1,6 @@
 +++
 title = "Why Blogging?"
-bookmarks = ["weird thoughs"]
+bookmarks = ["murmur"]
 date = "2019-04-10"
 type = "essay"
 +++

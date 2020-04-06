@@ -2,7 +2,7 @@
 title = "What About Swimming Alone?"
 description = "Why do I write this website title?  You see, people post fake things online."
 bookmarks = [
-"weird thoughts"
+"murmur"
 ]
 date = "2019-04-03"
 author = "ying"

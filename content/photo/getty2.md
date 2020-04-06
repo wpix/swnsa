@@ -1,8 +1,8 @@
 ---
-title: “Getty Center”
-imgurl: “getty2.jpg”
-albums: [‘museums’]
-date: "2019-04-06"
+title: "Getty Center"
+imgurl: "getty2.jpg"
+albums: ['museums']
+date: "2020-04-05"
 tags: ['architecture']
 ---
-![](https://apfbvvpren.cloudimg.io/width/cdn/n/n/https://raw.githubusercontent.com/wpix/solid-pipix/master/photos/getty2.jpg)
+![The getty center](https://apfbvvpren.cloudimg.io/v7/raw.githubusercontent.com/wpix/solid-pipix/master/photos/getty2.jpg?width/cdn/n/n)
