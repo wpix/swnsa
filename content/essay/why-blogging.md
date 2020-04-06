@@ -1,6 +1,6 @@
 +++
-title = "Why blogging?"
-bookmarks = ["about-writing"]
+title = "Why Blogging?"
+bookmarks = ["weird thoughs"]
 date = "2019-04-10"
 type = "essay"
 +++
@@ -21,7 +21,17 @@ So I guess I need to speak out. The thing is, I never feel “okay” to feel st
 
 This idea reminds me of a plot in the [Fan Girl](https://www.amazon.com/Fangirl-Novel-Rainbow-Rowell/dp/1250030951/). A professor of a writing course asks students a question—“why do we write?”—and got lots of funny responses. I will list some of them: 
 
-  > to express ourselves; because we like the sound of our own voices; to clear the voices in my head; to explore new worlds; to explore old ones; to set ourselves free; to show people what it’s like inside our heads (assuming they want to know); to make people laugh…  
+  > to express ourselves; 
+  >
+  > because we like the sound of our own voices; 
+  >
+  > to clear the voices in my head; to explore new worlds; 
+  >
+  > to explore old ones; to set ourselves free; 
+  >
+  > to show people what it’s like inside our heads (assuming they want to know); 
+  >
+  > to make people laugh…  
 
 I read the book two years ago, and I liked almost every single answer. In a way that I forget what the book mainly talks about but still remember this scene. A very special scene. I mean, just to think of something that is capable of setting yourself free. Previously I only find those answers interesting. Now I understand some of them a little better, such as to turn off the voices in my mind.
 <br/>
