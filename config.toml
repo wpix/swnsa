@@ -11,6 +11,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-Non-Comm
 paginate = 20
 pygmentsUseClasses = true
 pygmentsCodeFences = true
+PygmentsStyle = "emacs"
 
 [taxonomies]
 	tag = "tags"
