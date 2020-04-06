@@ -9,16 +9,13 @@
 		  {{ range $paginator.Pages -}}
 	
 	<a href="{{ .Permalink }}" class="h9 h9-m h5-l mw-100 mw6-l mr2-ns mb2 contain" data-tooltip="{{ .Title }}">
-	<img class="center contain" src="https://apfbvvpren.cloudimg.io/v7/{{ $img }}{{ .Params.imgurl | safeURL }}?height/256/n"
-	       
-	srcset="https://apfbvvpren.cloudimg.io/v7/{{ $img }}{{ .Params.imgurl | safeURL }}?height/256/n 1x,
-	https://apfbvvpren.cloudimg.io/v7/{{ $img }}{{ .Params.imgurl | safeURL }}?height/384/n 1.5x,
-	https://apfbvvpren.cloudimg.io/v7/{{ $img }}{{ .Params.imgurl | safeURL }}?height/512/n 2x,
-	https://apfbvvpren.cloudimg.io/v7/{{ $img }}{{ .Params.imgurl | safeURL }}?height/768/n 3x
-	https://apfbvvpren.cloudimg.io/v7/{{ $img }}{{ .Params.imgurl | safeURL }}?height/1200/n 1200w"
-	     
+	<img src="https://apfbvvpren.cloudimg.io/v7/{{ $img }}{{ .Params.imgurl | safeURL }}?height/400"
+	srcset="https://apfbvvpren.cloudimg.io/v7/{{ $img }}{{ .Params.imgurl | safeURL }}?height/400 400w,
+	https://apfbvvpren.cloudimg.io/v7/{{ $img }}{{ .Params.imgurl | safeURL }}?height/800 800w,
+	https://apfbvvpren.cloudimg.io/v7/{{ $img }}{{ .Params.imgurl | safeURL }}?height/1200 1200w"
 	class="mw-100 mw-100-ns h9 h-100-l" style="max-height: 100vh;">
-				</a>
+	</a>
+
 	{{- end }}
 		</div><!-- masonry -->
 	</div><!-- container for masonry -->

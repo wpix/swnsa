@@ -1,5 +1,5 @@
 ---
-title: "Biddeford, by the very edge of atlantic ocean"
+title: "Biddeford by Atlantic Ocean"
 imgurl: "biddeford_9815.jpg"
 albums: ['sea']
 date: "2019-04-07"
