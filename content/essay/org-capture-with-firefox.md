@@ -76,13 +76,13 @@ You can continue following the [guide here](https://github.com/sprig/org-capture
 ### Emacs configuration 
 In your init file or equivalent, adding
 
-```bash
+``` eclipse
 (server-start)
 (require 'org-protocol)
 ```
 and,
 
-```bash
+``` eclipse
 (setq org-directory "~/org-notes")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 (define-key global-map "\C-cc" 'org-capture)
@@ -103,13 +103,9 @@ and,
 (setq org-protocol-default-template-key "w")
 ```
 
-Note that you may want to set your own org-directory and default note file. `M-x eval-buffer` and this should be it.
-
-#### Testing 
-As of to this step, you may want to check if Org-protocal and Org-capture template workd properly before configuring Firefox.
-
 In terminal, input 
-```bash emacsclient -n "org-protocol:///capture?url=https://www.wikipedia.org/"
+```bash 
+emacsclient -n "org-protocol:///capture?url=https://www.wikipedia.org/"
 ``` 
 and a Org-capture buffer should appear in the current or a new Emacs window. Replace any url you want to test after `url="`.
 
@@ -122,7 +118,7 @@ To sure to do this step if you don't want all your current tabs go missing if an
 
 Right-click menu bar and select `add a new bookmark ...` and pasting the following javescript into the `Location` region:
 
-```
+``` javascript
 javascript:location.href = 'org-protocol://capture-eww-readable?template=w&url=' + encodeURIComponent(location.href) + '&title=' + encodeURIComponent(document.title || "[untitled page]");
 ```
 
