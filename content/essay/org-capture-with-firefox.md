@@ -46,7 +46,7 @@ Here we go.
 ```bash 
 cd ~/.local/share/applications
 ``` 
-and create a desktop file ```org-protocol.desktop```. Open this file with TextEdit and paste the following text into the file, then save.
+and create a desktop file **org-protocol.desktop**. Open this file with TextEdit and paste the following text into the file, then save.
 
 ```
 [Desktop Entry]
@@ -107,16 +107,16 @@ In terminal, input
 ```bash 
 emacsclient -n "org-protocol:///capture?url=https://www.wikipedia.org/"
 ``` 
-and a Org-capture buffer should appear in the current or a new Emacs window. Replace any url you want to test after *url=*.
+and a Org-capture buffer should appear in the current or a new Emacs window. Replace any url you want to test after **url=**.
 
 If the capture buffer doesn't pop up or the capture template is wrong, make sure to check what goes wrong in earlier setting. 
 
 ### Firefox integration
-This is achieved by a javascript bookmarklet. Before creating the bookmarklet, type *about:config* in Firefox url address space. Upon entering it, you will likely see a blank page with a search bar on top. In that search area, type *network.protocol-handler.expose.org-protocol* and choose the *boolean* option, then setting the value to *true*.
+This is achieved by a javascript bookmarklet. Before creating the bookmarklet, type **about:config** in Firefox url address space. Upon entering it, you will likely see a blank page with a search bar on top. In that search area, type **network.protocol-handler.expose.org-protocol** and choose the **boolean** option, then setting the value to **true**.
 
 To sure to do this step if you don't want all your current tabs go missing if any issues occurs when testing the bookmarklet. 
 
-Right-click menu bar and select *add a new bookmark ...* and pasting the following javescript into the *Location* region:
+Right-click menu bar and select **add a new bookmark ...** and pasting the following javescript into the **Location** region:
 
 ``` javascript
 javascript:location.href = 'org-protocol://capture-eww-readable?template=w&url=' + encodeURIComponent(location.href) + '&title=' + encodeURIComponent(document.title || "[untitled page]");
