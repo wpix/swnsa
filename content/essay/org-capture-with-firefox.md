@@ -31,11 +31,10 @@ This blog will guide you through setting:
 + Pandoc (if not already installed)
 
 With few guides available for setting this up for macOS, I record here the configurations that worked for me and hopefully it will be any help if you happen to find this blog. Below is my system information, FYI.
-
 <br/>
-System Version: macOS 10.14.4 (18E226) 
+> System Version: macOS 10.14.4 (18E226) 
 <br/>
-Kernel Version | Darwin 18.5.0 
+> Kernel Version | Darwin 18.5.0 
 <br/>
 
 ### Installing Org-protocal on macOS
