@@ -1,11 +1,11 @@
 +++
-title = "Organizing Annotated Bibliography in Org-mod: Setting up Org-protocal with Firefox on macOS"
+title = "Setting up Org-protocal with Firefox on macOS"
 bookmarks = ["emacs"]
 description = "Even I can do it."
 date = "2020-04-05"
 type = "essay"
 +++
-### TL;DR (Motivation)
+### TL;DR (Organizing Annotated Bibliography in Org-mod)
 I've had trouble establishing an effective work flow to organize annotated bibliography with Emacs. Previously I've been using [Org-brain](https://github.com/Kungsgeten/org-brain), a sophisticated wiki-style tool to visualize concepts and their relationships. Here is a screenshot of the structure I set up. 
 
 ![Org-brain overview](https://raw.githubusercontent.com/wpix/solid-pipix/master/miniposts/org-brain-overview.png)
@@ -20,7 +20,7 @@ I tend to download every related paper during a search session, only leaving mos
 ### Configuration Overview
 The [org-protocol-capture-html](https://github.com/alphapapa/org-protocol-capture-html) package seems like exactly what I need. Converting _html_ pages or selected _html_ text in Chrome or Firefox browsers to _org-mode_ format text via Pandoc, Org-protocal, and Org-capture. 
 
-There are three steps:
+This blog will guide you through setting:
 
 + Emacs external handler with Org-protocal
 
@@ -28,14 +28,13 @@ There are three steps:
 
 + Firefox configuration
 
-+ Pandoc installation (if not already)
++ Pandoc (if not already installed)
 
 With few guides available for setting this up for macOS, I record here the configurations that worked for me and hopefully it will be any help if you happen to find this blog. Below is my system information, FYI.
 <br/>
 System Version               :  macOS 10.14.4 (18E226)
+<br/>
 Kernel Version               :  Darwin 18.5.0
-
-
 <br/>
 <br/>
 ### Installing Org-protocal on macOS
@@ -43,7 +42,7 @@ Org-protocal is the agent between external applications and Emacs, meaning you c
 
 The [guide](https://blog.aaronbieber.com/2016/11/24/org-capture-from-anywhere-on-your-mac.html) recommended by Org-protocal-capture-html no longer works for me. I found the [tutorial of org-capture extension](https://github.com/sprig/org-capture-extension#set-up-org-protocol) useful.
 
-First, ```cd ~/.local/share/applications``` and create a desktop file ```org-protocol.desktop```. Open this file with TextEdit and paste the following text into the file, then save.
+First, ```bash cd ~/.local/share/applications``` and create a desktop file ```org-protocol.desktop```. Open this file with TextEdit and paste the following text into the file, then save.
 
 ```
 [Desktop Entry]
@@ -70,18 +69,16 @@ If succeeded, a file named "mimeinfo.cache" showing up in this folder.
 You can continue following the [guide here](https://github.com/sprig/org-capture-extension#under-osx) creating your own emacsclient application or you can download the prepared [dmg package](https://github.com/sprig/org-capture-extension/raw/master/EmacsClient.app.zip) directly. I recommend the latter.
 
 <br/>
-<br/>
-
 ### Emacs configuration 
 In your init file or equivalent, adding
 
-```elisp
+```bash
 (server-start)
 (require 'org-protocol)
 ```
 and,
 
-```elisp
+```bash
 (setq org-directory "~/org-notes")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 (define-key global-map "\C-cc" 'org-capture)
@@ -107,7 +104,10 @@ Note that you may want to set your own org-directory and default note file. ```M
 #### Testing 
 As of to this step, you may want to check if Org-protocal and Org-capture template workd properly before configuring Firefox.
 
-In terminal, input ```emacsclient -n "org-protocol:///capture?url=https://www.wikipedia.org/"``` and a Org-capture buffer should appear in the current or a new Emacs window. Replace any url you want to test after ```url=```.
+In terminal, input 
+```bash emacsclient -n "org-protocol:///capture?url=https://www.wikipedia.org/"
+``` 
+and a Org-capture buffer should appear in the current or a new Emacs window. Replace any url you want to test after ```"url="```.
 
 If the capture buffer doesn't pop up or the capture template is wrong, make sure to check what goes wrong in earlier setting. 
 
@@ -128,5 +128,13 @@ It is unlikely, but in case the [Pandoc](https://pandoc.org/installing.html#chro
  brew install pandoc
 ```
 
-### Done & Enjoy 
+### Final testing
 Open any webpage and hit the bookmarklet, a organized webpage in org-mode should appear in Emacs. 
+
+Here is a screenshot capturing this blog entry.
+
+![org-capture-example](https://raw.githubusercontent.com/wpix/solid-pipix/master/miniposts/org-protocal-example.png)
+
+Hopefully I will be capturing a ton literature considering the time I throw into configuring this feature.
+
+Enjoy~
