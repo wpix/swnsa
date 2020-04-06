@@ -42,7 +42,11 @@ Org-protocal is the agent between external applications and Emacs, meaning you c
 
 The [guide](https://blog.aaronbieber.com/2016/11/24/org-capture-from-anywhere-on-your-mac.html) recommended by Org-protocal-capture-html no longer works for me. I found the [tutorial of org-capture extension](https://github.com/sprig/org-capture-extension#set-up-org-protocol) useful.
 
-First, ```bash cd ~/.local/share/applications``` and create a desktop file ```org-protocol.desktop```. Open this file with TextEdit and paste the following text into the file, then save.
+Here we go.
+```bash 
+cd ~/.local/share/applications
+``` 
+and create a desktop file ```org-protocol.desktop```. Open this file with TextEdit and paste the following text into the file, then save.
 
 ```
 [Desktop Entry]
@@ -63,7 +67,7 @@ Then update the application folder with
 ```bash
 update-desktop-database ~/.local/share/applications/
 ```
-If succeeded, a file named "mimeinfo.cache" showing up in this folder. 
+If succeeded, a file named "mimeinfo.cache" will be created in this folder. 
 
 #### Preparing the emacsclient application
 You can continue following the [guide here](https://github.com/sprig/org-capture-extension#under-osx) creating your own emacsclient application or you can download the prepared [dmg package](https://github.com/sprig/org-capture-extension/raw/master/EmacsClient.app.zip) directly. I recommend the latter.
@@ -99,7 +103,7 @@ and,
 (setq org-protocol-default-template-key "w")
 ```
 
-Note that you may want to set your own org-directory and default note file. ```M-x eval-buffer``` and this should be it.
+Note that you may want to set your own org-directory and default note file. `M-x eval-buffer` and this should be it.
 
 #### Testing 
 As of to this step, you may want to check if Org-protocal and Org-capture template workd properly before configuring Firefox.
@@ -107,16 +111,16 @@ As of to this step, you may want to check if Org-protocal and Org-capture templa
 In terminal, input 
 ```bash emacsclient -n "org-protocol:///capture?url=https://www.wikipedia.org/"
 ``` 
-and a Org-capture buffer should appear in the current or a new Emacs window. Replace any url you want to test after ```"url="```.
+and a Org-capture buffer should appear in the current or a new Emacs window. Replace any url you want to test after `url="`.
 
 If the capture buffer doesn't pop up or the capture template is wrong, make sure to check what goes wrong in earlier setting. 
 
 ### Firefox integration
-This is achieved by a javascript bookmarklet. Before creating the bookmarklet, type ```about:config``` in Firefox url address space. Upon entering it, you will likely see a blank page with a search bar on top. In that search area, type ```network.protocol-handler.expose.org-protocol``` and choose the ```boolean``` option, then setting the value to ```true```.
+This is achieved by a javascript bookmarklet. Before creating the bookmarklet, type `about:config` in Firefox url address space. Upon entering it, you will likely see a blank page with a search bar on top. In that search area, type `network.protocol-handler.expose.org-protocol` and choose the `boolean` option, then setting the value to `true`.
 
 To sure to do this step if you don't want all your current tabs go missing if any issues occurs when testing the bookmarklet. 
 
-Right-click menu bar and select ```add a new bookmark ...``` and pasting the following javescript into the ```Location``` region:
+Right-click menu bar and select `add a new bookmark ...` and pasting the following javescript into the `Location` region:
 
 ```
 javascript:location.href = 'org-protocol://capture-eww-readable?template=w&url=' + encodeURIComponent(location.href) + '&title=' + encodeURIComponent(document.title || "[untitled page]");
