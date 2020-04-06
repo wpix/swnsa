@@ -9,9 +9,9 @@ copyright = "This work is licensed under a Creative Commons Attribution-Non-Comm
 
 # Posts per page
 paginate = 20
-pygmentsUseClasses = true
-pygmentsCodeFences = true
-PygmentsStyle = "emacs"
+pygmentsCodeFences = true   # Enable triple backtick 'code fence' markdown
+pygmentsUseClasses = false  # Add inline styles, no need to compile extra CSS
+pygmentsStyle = "github"
 
 [taxonomies]
 	tag = "tags"
@@ -62,14 +62,14 @@ PygmentsStyle = "emacs"
     placeholder = 'Say something ...'
     visitor = true
 
-[markup]
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ""
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    style = "emacs"
-    tabWidth = 4
+# [markup]
+#   [markup.highlight]
+#     codeFences = true
+#     guessSyntax = false
+#     hl_Lines = ""
+#     lineNoStart = 1
+#     lineNos = false
+#     lineNumbersInTable = false
+#     noClasses = true
+#     style = "emacs"
+#     tabWidth = 4

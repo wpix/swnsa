@@ -76,13 +76,13 @@ You can continue following the [guide here](https://github.com/sprig/org-capture
 ### Emacs configuration 
 In your init file or equivalent, adding
 
-``` github
+``` lisp
 (server-start)
 (require 'org-protocol)
 ```
 and,
 
-``` github
+``` lisp
 (setq org-directory "~/org-notes")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 (define-key global-map "\C-cc" 'org-capture)
@@ -102,7 +102,7 @@ and,
 ```
 
 In terminal, input 
-```bash 
+``` bash 
 emacsclient -n "org-protocol:///capture?url=https://www.wikipedia.org/"
 ``` 
 and a Org-capture buffer should appear in the current or a new Emacs window. Replace any url you want to test after **url=**.
