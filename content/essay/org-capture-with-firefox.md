@@ -31,7 +31,7 @@ This blog will guide you through setting:
 + Pandoc (if not already installed)
 
 With few guides available for setting this up for macOS, I record here the configurations that worked for me and hopefully it will be any help if you happen to find this blog. Below is my system information, FYI.
-<br/>
+
 > System Version: macOS 10.14.4 (18E226) 
 <br/>
 > Kernel Version | Darwin 18.5.0 
@@ -87,18 +87,16 @@ and,
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 (define-key global-map "\C-cc" 'org-capture)
 
-
 (defun transform-square-brackets-to-round-ones(string-to-transform)
   "Transforms [ into ( and ] into ), other chars left unchanged."
   (concat 
-  (mapcar #'(lambda (c) (if (equal c ?[) ?\( (if (equal c ?]) ?\) c))) string-to-transform))
-  )
+  (mapcar #'(lambda (c) (if (equal c ?[) ?\( (if (equal c ?]) ?\) c))) 
+  string-to-transform)))
 
 (setq org-capture-templates
-      '(("w" "Web site"
- entry
- (file+olp "~/org-notes/notes.org" "Web")
- "* %c :website:\n%U %?%:initial")))
+      '(("w" "Web site" entry
+	  (file+olp "~/org-notes/notes.org" "Web")
+	  "* %c :website:\n%U %?%:initial")))
 
 (setq org-protocol-default-template-key "w")
 ```
