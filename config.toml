@@ -9,6 +9,8 @@ copyright = "This work is licensed under a Creative Commons Attribution-Non-Comm
 
 # Posts per page
 paginate = 20
+pygmentsUseClasses = true
+pygmentsCodeFences = true
 
 [taxonomies]
 	tag = "tags"
