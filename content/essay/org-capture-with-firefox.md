@@ -76,13 +76,13 @@ You can continue following the [guide here](https://github.com/sprig/org-capture
 ### Emacs configuration 
 In your init file or equivalent, adding
 
-``` emacs
+``` github
 (server-start)
 (require 'org-protocol)
 ```
 and,
 
-``` emacs
+``` github
 (setq org-directory "~/org-notes")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 (define-key global-map "\C-cc" 'org-capture)
