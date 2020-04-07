@@ -9,9 +9,9 @@ copyright = "This work is licensed under a Creative Commons Attribution-Non-Comm
 
 # Posts per page
 paginate = 20
-pygmentsCodeFences = true   # Enable triple backtick 'code fence' markdown
-pygmentsUseClasses = false  # Add inline styles, no need to compile extra CSS
-pygmentsStyle = "github"
+#pygmentsCodeFences = true   # Enable triple backtick 'code fence' markdown
+pygmentsUseClasses = true  # Add inline styles, no need to compile extra CSS
+#pygmentsStyle = "github"
 
 [taxonomies]
 	tag = "tags"
