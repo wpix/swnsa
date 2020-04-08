@@ -113,7 +113,7 @@ ln -s  /usr/local/share/emacs/site-lisp/notmuch/ ~/.emacs.d/
 ### configuration
 Notmuch's website has detailed configuration guide. See [getting-started](https://notmuchmail.org/getting-started/).
 
-Note that setting path during `notmuch` step is a little tricky. Assuming your mail directory is `~/Mails/` then please run `cd ~` before the command `notmuch` and input `Mails/` as the path. If the directory is `~/Desktop/Mails/` then be sure to `cd ~/Desktop` prior to the `notmuch` command. 
+Note that setting path during **notmuch** step is a little tricky. Assuming your mail directory is **~/Mails/** then please run **cd ~** before the command **notmuch** and input **Mails/** as the path. If the directory is **~/Desktop/Mails/** then be sure to **cd ~/Desktop** prior to the **notmuch** command. 
 <br/>
 <br/>
 ## Msmtp
@@ -159,7 +159,7 @@ And send it with the command:
 cat test.txt | msmtp -a default example@gmail.com
 ```
 
-I recommend using the above command to send test emails as the well-documented `echo` function sometimes sends empty emails without subjects and contents.
+I recommend using the above command to send test emails as the well-documented **echo** function sometimes sends empty emails without subjects and contents.
 <br/>
 <br/>
 ## Finally, Emacs
@@ -173,7 +173,7 @@ In your init.el file, add the following codes
 (autoload 'notmuch "notmuch" "notmuch mail" t)
 (require 'notmuch)
 ```
-We need to first set the path as we installed Notmuch via homebrew and sometimes emacs cannot find the directory. The `'load-path`  variable specifies the folder in the `~/.emacs.d/`  that is linked from the `/usr/local/share/emacs/site-lisp/notmuch` 
+We need to first set the path as we installed Notmuch via homebrew and sometimes emacs cannot find the directory. The **'load-path**  variable specifies the folder in the **~/.emacs.d/**  that is linked from the **/usr/local/share/emacs/site-lisp/notmuch** 
 
 Also refer to the official website for [notmuch-emacs](https://notmuchmail.org/notmuch-emacs/) interface.
 
@@ -201,4 +201,4 @@ By far the notmuch-emacs system should work properly. Type
 ```
 M-x notmuch
 ```
-and notmuch's hello face will be waiting 📩📬📧📨 :)
+and notmuch's hello face will be waiting 📩📬✍ 
