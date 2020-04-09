@@ -9,9 +9,8 @@ copyright = "This work is licensed under a Creative Commons Attribution-Non-Comm
 
 # Posts per page
 paginate = 20
-#pygmentsCodeFences = true   # Enable triple backtick 'code fence' markdown
-pygmentsUseClasses = true  # Add inline styles, no need to compile extra CSS
-#pygmentsStyle = "github"
+#pygmentsUseClasses = true
+#pygmentsCodeFences = true
 
 [taxonomies]
 	tag = "tags"
@@ -69,7 +68,7 @@ pygmentsUseClasses = true  # Add inline styles, no need to compile extra CSS
 #     hl_Lines = ""
 #     lineNoStart = 1
 #     lineNos = false
-#     lineNumbersInTable = false
+#     lineNumbersInTable = true
 #     noClasses = true
 #     style = "emacs"
 #     tabWidth = 4
