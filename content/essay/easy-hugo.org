@@ -63,9 +63,7 @@ And the output automatically inserted in the org-mode file is shown as:
 | │   | │             | └──                 | single.html                         |            |            |
 | │   | ├──           | partials            |                                     |            |            |
 | │   | └──           | taxonomy            |                                     |            |            |
-...
-| 114 | directories,  | 175                 | files                               |            |            |
-
+......
 
 I cannot elaborate enough how deeply intrigued I am by this brilliance. 
 
