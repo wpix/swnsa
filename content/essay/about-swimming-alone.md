@@ -14,7 +14,9 @@ Q: Why do I write this website title? <br/>
 A: You see, people post fake things online.
 <br/>  
 Seriously, where does it come from?
+
 <!--more--> 
+
 **A Pizza Place**
 
 When I was an undergrad, I lived in the dormitory and shared a room with three awesome girls. One of them once worked part-time in a local pizza place where it offers those small cute delicious pizzas with various topping options.
