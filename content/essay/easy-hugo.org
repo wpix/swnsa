@@ -78,7 +78,7 @@ I cannot elaborate enough how deeply intrigued I am by this brilliance.
 *** Easy-hugo easy-configuration 
 Based on the above folder structure, below is the configuration added in my init file. In fact it is for two sites, which demonstrate another nice feature of easy-hugo, making managing and deploying multiple sites a breeze.
 
-#+BEGIN_EXAMPLE
+#+BEGIN_EXAMPLE lisp
 (setq easy-hugo-root "~/hugo/")
 (setq easy-hugo-sshdomain "mini")
 
@@ -88,8 +88,8 @@ Based on the above folder structure, below is the configuration added in my init
 	 (easy-hugo-url . "http://ying-ish.com")
 	 (easy-hugo-postdir "content/essay/"))
 	;; blog2 for photos
-	  ((easy-hugo-basedir "~/hugo/mini/")
-	   (easy-hugo-url "https://mini.ying-ish.com")
+	  ((easy-hugo-basedir . "~/hugo/mini/")
+	   (easy-hugo-url . "https://mini.ying-ish.com")
 	   (easy-hugo-postdir "content/photo/"))))
 
 (setq easy-hugo-server-flags "-D")
