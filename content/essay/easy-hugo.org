@@ -32,12 +32,6 @@ tree -v --charset utf-8
 #+end_src
 #+END_EXAMPLE
 
-When the code block is transferred into markdown format:
-#+begin_src shell
-cd ~/hugo/swnsa
-tree -v --charset utf-8
-#+end_src
-
 And the output automatically inserted in the org-mode file is shown as:
 #+RESULTS:
 | ├── | archetypes    |                     |                                     |            |            |
