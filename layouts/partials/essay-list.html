@@ -28,10 +28,12 @@
         </footer>
 
 
-        <div class="post-content f5 f5-ns measure-wide lh-copy">{{ .Content | markdownify }}
+        <div class="post-content f5 f5-ns measure-wide lh-copy">{{ .Content | markdownify | truncate 350 }}
+        {{ if .Truncated }}
             <a style="text-decoration: none; border-bottom:1.25px dotted;" class="link moon-gray hover-bg-light-gray" href="{{ .Permalink }}">read more 
                 <i class="far fa-hand-point-right"></i>
             </a>
+            {{ end }} 
         </div>
 
     </article>
