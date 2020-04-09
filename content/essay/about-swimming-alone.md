@@ -8,16 +8,13 @@ date = "2019-04-03"
 author = "ying"
 type = "essay"
 +++
-This morning, my to-do list is to finish the discussion part of a paper draft (or at least write something, anything). And Bang! Here we are. I am writing my first blog post.  
-
-Setting up a blog with Wordpress is not awfully amount of work, but it still costs me a robust 7-hr to get to the actual “blogging” part. (Now you can probably tell how much I don’t want to work on the draft, lol).  
+This morning, my to-do list is to finish the discussion part of a paper draft (or at least write something, anything). And Bang! Here we are. I am writing my first blog post. (Now you can probably tell how much I don’t want to work on the draft, lol). 
 <br/>
-Why do I write this website title? <br/>
-You see, people post fake things online.
+Q: Why do I write this website title? <br/>
+A: You see, people post fake things online.
 <br/>  
-
 Seriously, where does it come from?
-
+<!--more--> 
 **A Pizza Place**
 
 When I was an undergrad, I lived in the dormitory and shared a room with three awesome girls. One of them once worked part-time in a local pizza place where it offers those small cute delicious pizzas with various topping options.

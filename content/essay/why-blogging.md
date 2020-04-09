@@ -5,7 +5,7 @@ date = "2019-04-10"
 type = "essay"
 +++
 I recently feel the urge to produce something. Anything. I almost quit every social media during this semester. Plus my cellphone (which is pretty much broken anyway). Basically, I delete the apps and block the websites, and leave cellphone at home whenever I don’t have to take it with me.  
-
+<!--more--> 
 Yet giving up on all the social networks does not mean I don’t want to communicate with the world. Or I don’t need to. I’d rather think it is a must for the current situation. Still, by stepping out of the social network bubbles, I’ve isolated myself. I’ve had all sorts of ideas keep popping up in my mind. They fill up my brain, constantly whispering in my ears. And they don’t have a way out. This weird type of energy has been accumulated in my body and I cannot offer enough space for holding them together, and for taking them in. 
 
 I feel like an overcharged battery. So I decided to start this blog, to channel them out.   

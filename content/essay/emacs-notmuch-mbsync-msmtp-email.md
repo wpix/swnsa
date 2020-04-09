@@ -7,7 +7,7 @@ type = "essay"
 +++
 ### Emails, Notmuch, and I
 Emails are always distractions for me. Before using notmuch with Emacs, I don't use any email clients on my laptop, so I'd have to log into the office 365's web interface to read and reply emails, which is absolutely a pain in the neck. Yet I chose this workflow because it pretty much made checking email the least favorable thing whenever I am working, which was exactly what I needed.
-
+<!--more--> 
 Yet as I go through the transition to a senior phd student, there is simply no way to avoid emails any longer. I have to follow emails from advisors regarding various instructions on drafts, meetings, and numerous errands. There are also more emails from organizations as I start investing more time working in the professional societies. I need to not only constantly referring back to the emails, but also be able to archive them in a more efficient way (instead of struggling with tens of archive folders and which email goes to which folder).
 
 I've been looking for a solution for emails. Notmuch's philosophy is tagging and instant searching. You don't ever need to worry about how to set up your hierarchical structure of your archives and how to assign emails to the best child-folder. In notmuch, you do initial tag upon emails' arrival. You can then assign each email with multiple tags (while reading and replying) and notmuch will automatically generate different groups based on the tags. The "tag groups" resemble "archive folders," only in a much more flexible and dynamic way.

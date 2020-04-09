@@ -8,7 +8,7 @@ type = "essay"
 I've had trouble establishing an effective work flow to organize annotated bibliography with Emacs. Previously I've been using [Org-brain](https://github.com/Kungsgeten/org-brain), a sophisticated wiki-style tool to visualize concepts and their relationships. Here is a screenshot of the structure I set up. 
 
 ![Org-brain overview](https://apfbvvpren.cloudimg.io/v7/raw.githubusercontent.com/wpix/solid-pipix/master/articles/org-brain-overview.png?width/cdn/n/n)
-
+<!--more--> 
 Though one can interlink all concepts, it is hard to accurately locate a topic and related ones if one set up the hierarchy more than three levels, which is common in scientific research. I've tried logging multiple annotated bibliography under one parent headline or logging each bibliography as a standalone entry, but nothing quite work the way I imagined. I'd recommend Org-brain to users who mainly want to map relationships between concepts or ideas, with less focuses on details or descriptions of themselves. 
 
 Another option is to import bibliography into [Org-ref](https://github.com/jkitchin/org-ref) and annotate them in a org file. It's easy to set up and works smoothly but having all the bibliography stored in one single file makes things mixed up, especially when you switching to a different project or working simultaneously on multiple ones. (I highly recommend Org-ref for organizing bibliography and org-mode citation, a must-have for academic usage.) 

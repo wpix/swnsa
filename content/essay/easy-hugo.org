@@ -8,7 +8,7 @@ type = "essay"
 *** Hugo & org-mode
 
 Both of my sites are written in Hugo as it is unbelievably fast in terms of building websites. It can deploy thousands of *.md* files, one per page, within a second, meaning I can almost write markdown documents and check the generated html page (and a complete version of the entire website) almost simultaneously. This is a critical feature to me since I constantly change blog entries and edit site parameters as a total newbie. 
-
+# more
 A year ago, when I was using Sublime and BBedit, markdown formats worked just great, straight-forward and easy-to-remember syntax. With tree structured sidebar integrated in both editors, jumping between folders and files were effortlessly. A year after, though, I have dig into another rabbit hole 🐇 (Emacs) and way too deep. Getting used to org-mode also means being awkward with other text editors, and worse, with other file types. I find it a bit painful writing my last post with markdown, even with a powerful Emacs markdown-mode.
 
 (A ton of guides on how to build a site with Hugo are available a google away. For this entry I won't touch on this subject.) The solution I found to integrating org-mode and Hugo is the [[https://github.com/masasam/emacs-easy-hugo][Emacs-easy-hugo]] package. I noticed more discussions and posts on an alternative option with [[https://github.com/kaushalmodi/ox-hugo][ox-hugo]] exporter but less on easy-hugo, so sharing my two cents about the latter in this entry. Incredibly easy to set up if you already have a functioning Hugo site running.
