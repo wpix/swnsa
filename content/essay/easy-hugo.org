@@ -5,7 +5,7 @@ date = "2020-04-08"
 type = "essay"
 +++
 
-* Hugo & org-mode
+*** Hugo & org-mode
 
 Both of my sites are written in Hugo as it is unbelievably fast in terms of building websites. It can deploy thousands of **.md** files, one per page, within a second, meaning I can almost write markdown documents and check the generated html page (and a complete version of the entire website) almost simultaneously. This is a critical feature to me since I constantly change blog entries and edit site parameters as a total newbie. 
 
@@ -13,7 +13,7 @@ A year ago, when I was using Sublime and BBedit, markdown formats worked just gr
 
 (A ton of guides on how to build a site with Hugo are available a google away. For this entry I won't touch on this subject.) The solution I found to integrating org-mode and Hugo is the [[https://github.com/masasam/emacs-easy-hugo][Emacs-easy-hugo]] package. I noticed more discussions and posts on an alternative option with [[https://github.com/kaushalmodi/ox-hugo][ox-hugo]] exporter but less on easy-hugo, so sharing my two cents about the latter in this entry. Incredibly easy to set up if you already have a functioning Hugo site running.
 
-* Emacs-easy-hugo 
+*** Emacs-easy-hugo 
 
 Several advantages of the easy-hugo package:
 - easy to install via melpa 
@@ -22,7 +22,7 @@ Several advantages of the easy-hugo package:
 
 I will start with the last advantage. For example, the literal programming integration allowed by org-babel. When I want to export a tree view for my blog folder to better demonstrate the configuration, there is no need to open terminal, execute the command, and paste the result back into org-mode. In stead, I can use the code block to export the result directly. 
 
-** Org-babel
+**** Org-babel
 The original code block used in org-mode is:
 
 #+BEGIN_EXAMPLE
@@ -75,7 +75,7 @@ And the output automatically inserted in the org-mode file is shown as:
 
 I cannot elaborate enough how deeply intrigued I am by this brilliance. 
 
-** Easy-hugo easy-configuration 
+**** Easy-hugo easy-configuration 
 Based on the above folder structure, below is the configuration added in my init file. In fact it is for two sites, which demonstrate another nice feature of easy-hugo, making managing and deploying multiple sites a breeze.
 
 #+BEGIN_EXAMPLE
@@ -97,7 +97,7 @@ Based on the above folder structure, below is the configuration added in my init
 
 Single blog site is even easier to set up following the GitHub [[https://github.com/masasam/emacs-easy-hugo#sample-configuration][readme]].
 
-* Write and deploy 
+*** Write and deploy 
 To write in org-mode, simply activate easy-hugo mode, start a new post with **.org** extension. That's all you need to do. At any stage, easy-hugo can convert org format to markdown nicely. (It is not actually convert the format of the original org file, but more like a filter or an temporary exporter.)
 
 This site is powered by [[https://www.netlify.com/][Netlify]] with auto-deploy from the [[https://github.com/wpix/swnsa][GitHub repository]] . I highly recommend this setting as, first, it is free, and second, Netlify is really fast. Without Netlify, I may need to wait for 2-3 minutes for GitHub page to deploy but with Netlify it never cost more than 30 seconds. 
