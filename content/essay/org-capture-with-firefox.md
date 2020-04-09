@@ -1,11 +1,10 @@
 +++
 title = "Setting up Org-protocal with Firefox on macOS"
-bookmarks = ["emacs"]
-description = "Even I can do it."
+bookmarks = ["emacs","bibliography"]
 date = "2020-04-05"
 type = "essay"
 +++
-### TL;DR (Organizing Annotated Bibliography in Org-mod)
+### TL;DR (Annotated Bibliography in Org-mod)
 I've had trouble establishing an effective work flow to organize annotated bibliography with Emacs. Previously I've been using [Org-brain](https://github.com/Kungsgeten/org-brain), a sophisticated wiki-style tool to visualize concepts and their relationships. Here is a screenshot of the structure I set up. 
 
 ![Org-brain overview](https://apfbvvpren.cloudimg.io/v7/raw.githubusercontent.com/wpix/solid-pipix/master/articles/org-brain-overview.png?width/cdn/n/n)
