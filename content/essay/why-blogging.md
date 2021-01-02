@@ -23,8 +23,6 @@ This idea reminds me of a plot in the [Fan Girl](https://www.amazon.com/Fangirl-
 
   > to express ourselves; 
   >
-  > because we like the sound of our own voices; 
-  >
   > to clear the voices in my head; to explore new worlds; 
   >
   > to explore old ones; to set ourselves free; 
@@ -33,7 +31,7 @@ This idea reminds me of a plot in the [Fan Girl](https://www.amazon.com/Fangirl-
   >
   > to make people laugh…  
 
-I read the book two years ago, and I liked almost every single answer. In a way that I forget what the book mainly talks about but still remember this scene. A very special scene. I mean, just to think of something that is capable of setting yourself free. Previously I only find those answers interesting. Now I understand some of them a little better, such as to turn off the voices in my mind.
+I read the book two years ago, and I liked almost every single answer. In a way that I forget what the book mainly talks about but still remember this scene. A very special scene.
 <br/>
 
 **Writing as talking**

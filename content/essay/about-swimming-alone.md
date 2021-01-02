@@ -8,9 +8,10 @@ date = "2019-04-03"
 author = "ying"
 type = "essay"
 +++
-This morning, my to-do list is to finish the discussion part of a paper draft (or at least write something, anything). And Bang! Here we are. I am writing my first blog post. (Now you can probably tell how much I don’t want to work on the draft, lol). 
+This morning, my to-do list was to finish the discussion part of a draft (or at least write something, anything). And Bang! Here we are. I am writing my first blog post. (Now you can probably tell how much I don’t want to work on the draft, lol). 
+
 <br/>
-Q: Why do I write this website title? <br/>
+Q: Why do you say you will never swim alone? <br/>
 A: You see, people post fake things online.
 <br/>  
 Seriously, where does it come from?
@@ -19,28 +20,28 @@ Seriously, where does it come from?
 
 **A Pizza Place**
 
-When I was an undergrad, I lived in the dormitory and shared a room with three awesome girls. One of them once worked part-time in a local pizza place where it offers those small cute delicious pizzas with various topping options.
+When I was an undergrad, I lived in the dormitory and shared a room with three awesome girls. One of them once worked part-time in a local pizza place where it offered those small cute delicious pizzas with various topping options.
 
-(Speaking of pizza toppings, I think Chinese-style pizza comes with way more choices than US-style. We have fruit pizzas like pineapple, banana, and durian. We even have chocolate pizza. You get the idea.)
+(Speaking of pizza toppings, I think Chinese-style pizza comes with way more choices than US ones. We have fruit pizzas like pineapple, banana, and durian. We even have chocolate pizza. You get the idea.)
 
-The slogan of that pizza place says: never swimming alone. I've always found it interesting but cannot tell you exactly why. It's just weirdly cute.
+The slogan of that pizza place says: Never Swimming Alone. I've always found it interesting but cannot tell you exactly why. It's just weirdly cute.
 <br/>
 
 **A Football Club**
 
-It was also during the undergrad, sophomore year, I started dating my boyfriend (who still is). He is a huge fan of the Liverpool Football Club. Ive never heard of Liverpool before, or I should say I’ve never heard of 99% of the football clubs in the world, even now. One day he posted a photo on Weibo. It was a gate with the decorative letters on the top that reads "You’ll Never Walk Alone," and it turned out to be the gate of the Liverpool Stadium.
+It was also during the undergrad, sophomore year, I started dating my ex-boyfriend. He is a huge fan of the Liverpool Football Club. I've never heard of Liverpool before, or I should say I’ve never heard of 99% of the football clubs, even now. One day he posted a photo on Weibo. It was a gate with the decorative letters on the top that reads "You’ll Never Walk Alone," and it turned out to be the gate of the Liverpool Stadium.
 
 I could hardly make the connection between this sentence and the football club. “You’ll never walk alone" is such a romantic commitment while even the idea of Liverpool seems too manly, too massive. Nevertheless, I like this statement. A lot.
 <br/>
 
 **A Pink Floyd's Song**
 
-Last summer, when I was in a conference, a friend shared his favorite song with me. Pink Floyd’s _Wish You Were Here_. I guess it is a famous song, but again, I just never had had the chance to know it. The lyric says:
+Last summer, when I was in a conference, a friend shared his favorite song with me. Pink Floyd’s _Wish You Were Here_. The lyric says:
 
 > How I wish, how I wish you were here <br/>
 > We're just two lost souls swimming in a fishbowl
 
-I immediately fell in love with this song, and had some (maybe too much) thoughts about it. In the beginning, I was sad as it sings I wish you “were” here. In fact, you are not. So I am the only lost soul swimming in this fishbowl. Then probably two-month after, I suddenly had this idea that “thank goodness you are not here.” It is such a relief knowing that only I got trapped, only I will swim alone, but you are all free.
+I immediately fell in love with this song, and had some (maybe too much) thoughts about it. In the beginning, I was sad as it sings I wish you “were” here, meaning in fact you are not. So I am the only lost soul swimming in this fishbowl. Probably two-month after, I suddenly had this idea that “thank goodness you are not here.” It is such a relief knowing that only I got trapped, only I will swim alone, but you are all free.
 
 _I wish you were here, and I am glad that you are not._
 

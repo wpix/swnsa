@@ -1,0 +1,138 @@
+% Created 2020-04-15 Wed 03:14
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Congying Wang}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={Congying Wang},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.3 (Org mode 9.2.6)}, 
+ pdflang={English}}
+\begin{document}
+
+\tableofcontents \clearpage\sout{+}
+title = "Writing Hugo pages in org-mode with Easy-Hugo"
+bookmarks = ["emacs","org","hugo"]
+date = "2020-04-08"
+type = "essay"
+\sout{+}
+
+\section{Hugo \& org-mode}
+\label{sec:org4936cea}
+
+Both of my sites are written in Hugo as it is unbelievably fast in terms of building websites. It can deploy thousands of \textbf{.md} files, one per page, within a second, meaning I can almost write markdown documents and check the generated html page (and a complete version of the entire website) almost simultaneously. This is a critical feature to me since I constantly change blog entries and edit site parameters as a total newbie. 
+
+A year ago, when I was using Sublime and BBedit, markdown formats worked just great, straight-forward and easy-to-remember syntax. With tree structured sidebar integrated in both editors, jumping between folders and files were effortlessly. A year after, though, I have dig into another rabbit hole 🐇 (Emacs) and way too deep. Getting used to org-mode also means being awkward with other text editors, and worse, with other file types. I find it a bit painful writing my last post with markdown, even with a powerful Emacs markdown-mode.
+
+(A ton of guides on how to build a site with Hugo are available a google away. For this entry I won't touch on this subject.) The solution I found to integrating org-mode and Hugo is the \href{https://github.com/masasam/emacs-easy-hugo}{Emacs-easy-hugo} package. I noticed more discussions and posts on an alternative option with \href{https://github.com/kaushalmodi/ox-hugo}{ox-hugo} exporter but less on easy-hugo, so sharing my two cents about the latter in this entry. Incredibly easy to set up if you already have a functioning Hugo site running.
+
+\section{Emacs-easy-hugo}
+\label{sec:orgf2f3efe}
+Several advantages of the easy-hugo package:
+
+\begin{itemize}
+\item easy to install via melpa
+\item easy to configure
+\item flexible and abundant org-mode features
+\end{itemize}
+
+I will start with the last advantage. For example, the literal programming integration allowed by org-babel. When I want to export a tree view for my blog folder to better demonstrate the configuration, there is no need to open terminal, execute the command, and paste the result back into org-mode. In stead, I can use the code block to export the result directly. 
+
+\subsection{Org-babel}
+\label{sec:org1e3687f}
+The original code block used in org-mode is:
+
+\begin{verbatim}
+#+begin_src shell
+cd ~/hugo/swnsa
+tree -v --charset utf-8
+#+end_src
+\end{verbatim}
+
+And the output automatically inserted in the org-mode file is shown as:
+\begin{center}
+\begin{tabular}{llllll}
+├── & archetypes &  &  &  & \\
+│   & └── & default.md &  &  & \\
+├── & config.toml &  &  &  & \\
+├── & content &  &  &  & \\
+│   & ├── & about.md &  &  & \\
+│   & ├── & albums &  &  & \\
+│   & │   & └── & \_index.md &  & \\
+│   & ├── & archives &  &  & \\
+│   & │   & └── & \_index.md &  & \\
+│   & ├── & bookmarks &  &  & \\
+│   & │   & └── & \_index.md &  & \\
+│   & ├── & essay &  &  & \\
+│   & │   & ├── & \_index.md &  & \\
+│   & ├── & photo &  &  & \\
+│   & │   & ├── & \_index.md &  & \\
+│   & └── & tags &  &  & \\
+│   & └── & \_index.md &  &  & \\
+├── & layouts &  &  &  & \\
+│   & ├── & \_default &  &  & \\
+│   & │   & ├── & index.xml &  & \\
+│   & ├── & archives &  &  & \\
+│   & │   & └── & archives.html &  & \\
+│   & ├── & essay &  &  & \\
+│   & │   & └── & single.html &  & \\
+│   & ├── & index.html &  &  & \\
+│   & ├── & page &  &  & \\
+│   & │   & └── & single.html &  & \\
+│   & ├── & partials &  &  & \\
+│   & └── & taxonomy &  &  & \\
+\end{tabular}
+\end{center}
+\ldots{}\ldots{}
+
+I cannot elaborate enough how deeply intrigued I am by this brilliance. 
+
+\subsection{Easy-hugo easy-configuration}
+\label{sec:org5998df5}
+Based on the above folder structure, below is the configuration added in my init file. In fact it is for two sites, which demonstrate another nice feature of easy-hugo, making managing and deploying multiple sites a breeze.
+
+\begin{verbatim}
+(setq easy-hugo-root "~/hugo/")
+(setq easy-hugo-sshdomain "mini")
+
+(setq easy-hugo-bloglist
+	;; blog
+      '(((easy-hugo-basedir . "~/hugo/swnsa/")
+	 (easy-hugo-url . "http://ying-ish.com")
+	 (easy-hugo-postdir "content/essay/"))
+	;; blog2 for photos
+	  ((easy-hugo-basedir . "~/hugo/mini/")
+	   (easy-hugo-url . "https://mini.ying-ish.com")
+	   (easy-hugo-postdir "content/photo/"))))
+
+(setq easy-hugo-server-flags "-D")
+\end{verbatim}
+
+Single blog site is even easier to set up following the GitHub \href{https://github.com/masasam/emacs-easy-hugo\#sample-configuration}{readme}.
+
+\section{Write and deploy}
+\label{sec:org1964176}
+To write in org-mode, simply activate easy-hugo mode, start a new post with \textbf{.org} extension. That's all you need to do. At any stage, easy-hugo can convert org format to markdown nicely. (It is not actually convert the format of the original org file, but more like a filter or an temporary exporter.)
+
+This site is powered by \href{https://www.netlify.com/}{Netlify} with auto-deploy from the \href{https://github.com/wpix/swnsa}{GitHub repository} . I highly recommend this setting as, first, it is free, and second, Netlify is really fast. Without Netlify, I may need to wait for 2-3 minutes for GitHub page to deploy but with Netlify it never cost more than 30 seconds. 
+
+I have a script to automate the git update which only cost 2 key strokes. But with Emacs-magit it is also super fast. 
+
+Save, commit, and done.
+\end{document}
